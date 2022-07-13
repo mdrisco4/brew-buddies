@@ -2,9 +2,6 @@ import React from "react";
 import styled from "styled-components";
 
 
-const LandingPageImage = styled.img`
-  width: 100%;
-`;
 
 const SectionTitle = styled.div`
   font-size: 50px;
@@ -50,6 +47,9 @@ const BoardMemberContainer = styled.div`
   }
 `;
 
+const LandingPageImage = styled.img`
+  width: 100%;
+`;
 
 const BoardPhoto = styled.img`
   height: auto;
@@ -150,6 +150,33 @@ const FooterLogo = styled.img`
 const Home = () => (
     <div style={{ maxWidth: "1200px", marginLeft: "10%", marginRight: "10%" , backgroundColor: "blue" }}>
       <LandingPageImage src="https://i.imgur.com/vkGHLOP.jpg" />
+    {/* <BoardPhoto src="https://i.imgur.com/rpLw26n.png" /> */}
+    <MissionStatement>Mission Statement</MissionStatement>
+    <BoardMemberContainer>
+      <div>
+        <BoardDescription>
+          BrewBuddies was formed out of a desire to improve the craft beverage
+          experience for breweries, bars, restaurants, and the consumers
+          themselves. New York State allows craft beverage companies to sell
+          their products directly to consumers and retailers without the need to
+          partner with a traditional distributor, and our goal is to help those
+          companies realize the maximum potential from this unique opportunity.
+        </BoardDescription>
+      </div>
+    </BoardMemberContainer>
+    <BoardMemberContainer>
+      <div>
+        <BoardDescription>More content</BoardDescription>
+      </div>
+    </BoardMemberContainer>
+    <BoardMemberContainer>
+      <BoardPhoto src="https://i.imgur.com/rpLw26n.png" />
+      <div>
+        <BoardDescription>Additional content</BoardDescription>
+      </div>
+    </BoardMemberContainer>
+    <FooterContainer>
+    </FooterContainer>
   </div>
 );
 
