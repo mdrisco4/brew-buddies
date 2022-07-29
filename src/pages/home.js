@@ -9,15 +9,39 @@ const LandingPageContainer = styled.div`
 
 const LandingPageImage = styled.img`
   width: 100%;
+  margin-bottom: none !important;
 `;
 
 const LandingPagePromptOne = styled.div`
   position: absolute;
-  top: 45%;
+  top: 42%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 45px;
+  font-size: 25px;
   -webkit-text-stroke: 2px black;
+  @media (min-width: 540px) {
+    top: 44%;
+    font-size: 30px;
+  }
+  @media (min-width: 650px) {
+    top: 45%;
+    font-size: 34px;
+  }
+  @media (min-width: 768px) {
+    font-size: 39px;
+  }
+  @media (min-width: 850px) {
+    font-size: 45px;
+  }
+  @media (min-width: 960px) {
+    font-size: 51px;
+  }
+  @media (min-width: 1100px) {
+    font-size: 56px;
+  }
+  @media (min-width: 1250px) {
+    font-size: 63px;
+  }
 `;
 
 const LandingPagePromptTwo = styled.div`
@@ -25,17 +49,41 @@ const LandingPagePromptTwo = styled.div`
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 45px;
+  font-size: 25px;
+  width: 60%;
   -webkit-text-stroke: 2px black;
+  @media (min-width: 540px) {
+    top: 58%;
+    font-size: 30px;
+  }
+  @media (min-width: 650px) {
+    top: 58%;
+    font-size: 34px;
+  }
+  @media (min-width: 768px) {
+    font-size: 39px;
+  }
+  @media (min-width: 850px) {
+    font-size: 45px;
+  }
+  @media (min-width: 960px) {
+    font-size: 51px;
+  }
+  @media (min-width: 1100px) {
+    font-size: 56px;
+  }
+  @media (min-width: 1250px) {
+    font-size: 63px;
+  }
 `;
 
 const Home = () => (
   <div
     style={{
-      maxWidth: "1200px",
+      maxWidth: "1500px",
       marginLeft: "10%",
       marginRight: "10%",
-      backgroundColor: "blue",
+      backgroundColor: "rgb(74, 73, 72)",
     }}
   >
     <LandingPageContainer>

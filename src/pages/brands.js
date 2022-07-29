@@ -22,7 +22,6 @@ const LogoContainer = styled.div`
   width: 80%;
   margin-left: auto;
   margin-right: auto;
-  border-bottom: 200px;
   border-color: rgb(154, 157, 159);
   @media (min-width: 550px) {
     grid-template-columns: 1fr 1fr 1fr;
@@ -45,7 +44,7 @@ const Logo = styled.img`
 `;
 
 const Brands = () => (
-  <div style={{ maxWidth: "1200px", backgroundColor: "rgb(74, 73, 72)" }}>
+  <div style={{ maxWidth: "15000px", backgroundColor: "rgb(74, 73, 72)", textAlign: "center" }}>
     <h1>BrewBuddies Brands</h1>
     <BrandInfo>
       We strive to bring you the best in craft beer with our services. If you

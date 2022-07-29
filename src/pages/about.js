@@ -5,7 +5,6 @@ const MissionStatement = styled.div`
   font-size: 14px;
   text-align: center;
   font-weight: bold;
-  margin-bottom: 15px;
   margin-left: 6%;
   margin-right: 6%;
   @media (min-width: 550px) {
@@ -22,7 +21,7 @@ const MissionStatement = styled.div`
 `;
 
 const About = () => (
-  <div style={{ maxWidth: "1200px", backgroundColor: "rgb(74, 73, 72)" }}>
+  <div style={{ maxWidth: "15000px", backgroundColor: "rgb(74, 73, 72)", textAlign: "center" }}>
     <h1>About Us</h1>
     <MissionStatement>
       BrewBuddies was formed out of a desire to improve the craft beverage

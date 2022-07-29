@@ -24,8 +24,10 @@ const MenuLinksContainer = styled.div`
   display: flex;
   flex-direction: column;
   margin-bottom: 12px;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
   @media (min-width: 650px) {
+  justify-content: space-between;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -76,7 +78,6 @@ const Logo = styled.img`
 export default function App() {
   return (
     <div>
-      {/* <Header /> */}
       <Router>
         <HeaderContainer>
           <MenuLinksContainer>

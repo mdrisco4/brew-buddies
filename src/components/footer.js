@@ -1,6 +1,32 @@
 import React from "react";
 import styled from "styled-components";
 
+const TopBorder = styled.div`
+  background-color: rgb(74, 73, 72);
+  height: 30px;
+  @media (min-width: 540px) {
+    height: 35px;
+  }
+  @media (min-width: 650px) {
+    height: 42px;
+  }
+  @media (min-width: 768px) {
+    height: 45px;
+  }
+  @media (min-width: 840px) {
+    height: 50px;
+  }
+  @media (min-width: 960px) {
+    height: 56px;
+  }
+  @media (min-width: 1240px) {
+    height: 60px;
+  }
+  @media (min-width: 1150px) {
+    height: 64px;
+  }
+`;
+
 const Logo = styled.img`
   width: 20%;
   margin-left: 40%;
@@ -21,7 +47,8 @@ const ContactInfo = styled.div`
 `;
 
 const Footer = () => (
-  <div style={{ /*maxWidth: "1200px",*/ backgroundColor: "rgb(154, 157, 159)" }}>
+  <div style={{ maxWidth: "15000px", backgroundColor: "rgb(154, 157, 159)", textAlign: "center" }}>
+    <TopBorder />
     <Logo src="https://i.imgur.com/rpLw26n.png" />
     <ContactInfo>Rob Richenberg</ContactInfo>
     <ContactInfo>Founder/Beer Guru</ContactInfo>
