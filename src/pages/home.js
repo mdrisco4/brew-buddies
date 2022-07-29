@@ -17,7 +17,11 @@ const LandingPagePromptOne = styled.div`
   top: 42%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 25px;
+  font-size: 20px;
+  @media (min-width: 420px) {
+    top: 44%;
+    font-size: 25px;
+  }
   @media (min-width: 540px) {
     top: 44%;
     font-size: 30px;
@@ -49,8 +53,12 @@ const LandingPagePromptTwo = styled.div`
   top: 55%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 25px;
+  font-size: 20px;
   width: 60%;
+  @media (min-width: 420px) {
+    top: 56%;
+    font-size: 25px;
+  }
   @media (min-width: 540px) {
     top: 58%;
     font-size: 30px;
