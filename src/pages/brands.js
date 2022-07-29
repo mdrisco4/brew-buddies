@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-
-
 const MissionStatement = styled.div`
   font-size: 24px;
   text-align: center;
@@ -36,18 +34,21 @@ const Logo = styled.img`
 `;
 
 const Brands = () => (
-    <div style={{ maxWidth: "1200px", backgroundColor: "rgb(154, 157, 159)" }}>
+  <div style={{ maxWidth: "1200px", backgroundColor: "rgb(154, 157, 159)" }}>
     <h1>Brands Offered</h1>
-    <MissionStatement>Here are the brands offered by our services.</MissionStatement>
-    <MissionStatement>If you would like to get a brand not featured here please ask.</MissionStatement>
+    <MissionStatement>
+      Here are the brands offered by our services.
+    </MissionStatement>
+    <MissionStatement>
+      If you would like to get a brand not featured here please ask.
+    </MissionStatement>
     <LogoContainer>
-
-    <Logo src="https://i.imgur.com/xYO0SLc.png" />
-    <Logo src="https://i.imgur.com/Vk5ylrJ.jpg" />
-    <Logo src="https://i.imgur.com/wxPVsA5.jpg" />
-    <Logo src="https://i.imgur.com/33Tp5t4.png" />
-    <Logo src="https://i.imgur.com/5878TcE.png" />
-    <Logo src="https://i.imgur.com/O2OXJkV.jpg" />
+      <Logo src="https://i.imgur.com/xYO0SLc.png" />
+      <Logo src="https://i.imgur.com/Vk5ylrJ.jpg" />
+      <Logo src="https://i.imgur.com/wxPVsA5.jpg" />
+      <Logo src="https://i.imgur.com/33Tp5t4.png" />
+      <Logo src="https://i.imgur.com/5878TcE.png" />
+      <Logo src="https://i.imgur.com/O2OXJkV.jpg" />
     </LogoContainer>
   </div>
 );

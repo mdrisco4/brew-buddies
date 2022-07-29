@@ -1,8 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-
-
 const ContactInfo = styled.div`
   text-align: center;
   font-size: 40px;
@@ -13,7 +11,7 @@ const ContactInfo = styled.div`
 `;
 
 const Contact = () => (
-    <div style={{ maxWidth: "1200px", backgroundColor: "rgb(154, 157, 159)" }}>
+  <div style={{ maxWidth: "1200px", backgroundColor: "rgb(154, 157, 159)" }}>
     <h1>Contact</h1>
     <ContactInfo>Rob Richenberg</ContactInfo>
     <ContactInfo>Founder/Beer Guru</ContactInfo>

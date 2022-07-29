@@ -1,20 +1,18 @@
-// import "./App.css";
-import Header from "./components/header.js";
-import Footer from "./components/footer.js";
-import Contact from "./pages/contact.js";
-import About from "./pages/about.js";
 import Home from "./pages/home.js";
 import Brands from "./pages/brands.js";
+import About from "./pages/about.js";
+import Contact from "./pages/contact.js";
+import Footer from "./components/footer.js";
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 import styled from "styled-components";
 
 const HeaderContainer = styled.div`
   font-size: 24px;
-  text-align: center;
   background-color: rgb(154, 157, 159);
   font-weight: bold;
-  /* border-bottom: 200px;
-  border-color: rgb(154, 157, 159); */
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   @media (min-width: 800px) {
     font-size: 30px;
   }
@@ -113,5 +111,3 @@ export default function App() {
     </div>
   );
 }
-
-

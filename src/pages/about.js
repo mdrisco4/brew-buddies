@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
 
-
 const MissionStatement = styled.div`
   font-size: 24px;
   text-align: center;
@@ -14,8 +13,6 @@ const MissionStatement = styled.div`
   @media (min-width: 1150px) {
   }
 `;
-
-
 
 const About = () => (
   <div style={{ maxWidth: "1200px", backgroundColor: "rgb(154, 157, 159)" }}>
