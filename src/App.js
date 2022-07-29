@@ -1,5 +1,6 @@
 // import "./App.css";
 import Header from "./components/header.js";
+import Footer from "./components/footer.js";
 import Contact from "./pages/contact.js";
 import About from "./pages/about.js";
 import Home from "./pages/home.js";
@@ -63,8 +64,7 @@ const MenuLinks = styled.div`
 
 const Logo = styled.img`
   width: 100%;
-  /* margin-left: auto;
-  margin-right: auto; */
+  /* padding-left: 180%; */
   @media (min-width: 768px) {
     /* margin-left: initial;
     margin-right: initial; */
@@ -78,23 +78,27 @@ export default function App() {
       <Router>
         <HeaderContainer>
           <MenuLinksContainer>
-            <Link to="/">
-              <MenuLinks>Home</MenuLinks>
-            </Link>
-            <Link to="/contact">
-              <MenuLinks>Contact Us</MenuLinks>
-            </Link>
-            <Link to="/">
-              <MenuLinks>
+            <MenuLinks>
+              <Link to="/">Home</Link>
+            </MenuLinks>
+
+            <MenuLinks>
+              <Link to="/brands">Brands</Link>
+            </MenuLinks>
+
+            <MenuLinks>
+              <Link to="/">
                 <Logo src="https://i.imgur.com/rpLw26n.png" />
-              </MenuLinks>
-            </Link>
-            <Link to="/about">
-              <MenuLinks>About Us</MenuLinks>
-            </Link>
-            <Link to="/brands">
-              <MenuLinks>Brands</MenuLinks>
-            </Link>
+              </Link>
+            </MenuLinks>
+
+            <MenuLinks>
+              <Link to="/about">About Us</Link>
+            </MenuLinks>
+
+            <MenuLinks>
+              <Link to="/contact">Contact Us</Link>
+            </MenuLinks>
           </MenuLinksContainer>
 
           <Routes>
@@ -105,10 +109,9 @@ export default function App() {
           </Routes>
         </HeaderContainer>
       </Router>
+      <Footer />
     </div>
   );
 }
 
-{
-  /* export default App; */
-}
+

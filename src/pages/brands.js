@@ -3,21 +3,6 @@ import styled from "styled-components";
 
 
 
-const SectionTitle = styled.div`
-  font-size: 50px;
-  text-align: center;
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  margin-bottom: 20px;
-  line-height: 50px;
-  @media (min-width: 800px) {
-  }
-  @media (min-width: 1150px) {
-    font-size: 60px;
-    margin-bottom: 25px;
-  }
-`;
-
 const MissionStatement = styled.div`
   font-size: 24px;
   text-align: center;
@@ -31,128 +16,39 @@ const MissionStatement = styled.div`
   }
 `;
 
-const BoardMemberContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  margin-bottom: 12px;
-  @media (min-width: 650px) {
-    padding-left: 10px;
-  }
-  @media (min-width: 768px) {
-    flex-direction: row;
-  }
-  @media (min-width: 800px) {
-  }
-  @media (min-width: 1150px) {
-  }
-`;
-
-const LandingPageImage = styled.img`
-  width: 100%;
-`;
-
-const BoardPhoto = styled.img`
-  height: auto;
+const LogoContainer = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   width: 80%;
-  margin: 0 10% 0 10%;
+  margin-left: auto;
+  margin-right: auto;
+  border-bottom: 200px;
+  border-color: rgb(154, 157, 159);
+`;
+
+const Logo = styled.img`
+  width: 50%;
+  margin: auto;
   @media (min-width: 768px) {
-    width: 20%;
-    margin: 0 0 0 0;
-  }
-  @media (min-width: 800px) {
-  }
-  @media (min-width: 1150px) {
-    /* height: 340px; */
-  }
-`;
-
-const BoardTitle = styled.div`
-  font-size: 20px;
-  margin-left: 10px;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  font-weight: bold;
-  line-height: 35px;
-  color: white;
-  text-decoration: none;
-  @media (min-width: 550px) {
-    font-size: 28px;
-  }
-  @media (min-width: 800px) {
-    font-size: 35px;
-  }
-  @media (min-width: 1150px) {
-    font-size: 40px;
-  }
-`;
-
-const BoardDescription = styled.div`
-  font-size: 15px;
-  margin-left: 10px;
-  /* color: rgb(154, 157, 159); */
-  font-weight: bold;
-  @media (min-width: 550px) {
-    font-size: 20px;
-  }
-  @media (min-width: 800px) {
-    font-size: 24px;
-  }
-  @media (min-width: 1150px) {
-    font-size: 32px;
-  }
-`;
-
-const ContactInfo = styled.div`
-  font-size: 24px;
-  font-weight: bold;
-  text-align: center;
-  @media (min-width: 650px) {
-    text-align: left;
-  }
-  @media (min-width: 850px) {
-    font-size: 32px;
-    margin-top: 4px;
-  }
-  @media (min-width: 1150px) {
-    font-size: 45px;
-  }
-`;
-
-const FooterContainer = styled.div`
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  @media (min-width: 650px) {
-    flex-direction: row;
-  }
-  @media (min-width: 850px) {
-  }
-  @media (min-width: 1200px) {
-  }
-`;
-
-const FooterLogo = styled.img`
-  @media (min-width: 650px) {
-    height: 100px;
-    width: 100px;
-    margin: 0;
-  }
-  @media (min-width: 850px) {
-    height: 140px;
-    width: 140px;
-  }
-  @media (min-width: 1150px) {
-    height: 180px;
-    width: 180px;
+    /* margin-left: initial;
+    margin-right: initial; */
   }
 `;
 
 const Brands = () => (
-    <div style={{ maxWidth: "1200px", backgroundColor: "blue" }}>
-      {/* <LandingPageImage src="https://i.imgur.com/vkGHLOP.jpg" /> */}
-    {/* <BoardPhoto src="https://i.imgur.com/rpLw26n.png" /> */}
-    <MissionStatement>Brands</MissionStatement>
-    <h1>Brands Here</h1>
+    <div style={{ maxWidth: "1200px", backgroundColor: "rgb(154, 157, 159)" }}>
+    <h1>Brands Offered</h1>
+    <MissionStatement>Here are the brands offered by our services.</MissionStatement>
+    <MissionStatement>If you would like to get a brand not featured here please ask.</MissionStatement>
+    <LogoContainer>
+
+    <Logo src="https://i.imgur.com/xYO0SLc.png" />
+    <Logo src="https://i.imgur.com/Vk5ylrJ.jpg" />
+    <Logo src="https://i.imgur.com/wxPVsA5.jpg" />
+    <Logo src="https://i.imgur.com/33Tp5t4.png" />
+    <Logo src="https://i.imgur.com/5878TcE.png" />
+    <Logo src="https://i.imgur.com/O2OXJkV.jpg" />
+    </LogoContainer>
   </div>
 );
 
