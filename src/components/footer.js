@@ -21,12 +21,12 @@ const ContactInfo = styled.div`
 `;
 
 const Footer = () => (
-  <div style={{ maxWidth: "1200px" }}>
+  <div style={{ /*maxWidth: "1200px",*/ backgroundColor: "rgb(154, 157, 159)" }}>
     <Logo src="https://i.imgur.com/rpLw26n.png" />
     <ContactInfo>Rob Richenberg</ContactInfo>
     <ContactInfo>Founder/Beer Guru</ContactInfo>
-    <ContactInfo>(585) 813-4506</ContactInfo>
     <ContactInfo>Rob@BrewBuddiesNY.com</ContactInfo>
+    <ContactInfo>(585) 813-4506</ContactInfo>
   </div>
 );
 

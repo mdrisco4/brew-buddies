@@ -2,12 +2,19 @@ import React from "react";
 import styled from "styled-components";
 
 const MissionStatement = styled.div`
-  font-size: 24px;
+  font-size: 14px;
   text-align: center;
-  /* color: rgb(154, 157, 159); */
   font-weight: bold;
   margin-bottom: 15px;
-  @media (min-width: 800px) {
+  margin-left: 6%;
+  margin-right: 6%;
+  @media (min-width: 550px) {
+    font-size: 18px;
+  }
+  @media (min-width: 640px) {
+    font-size: 22px;
+  }
+  @media (min-width: 768px) {
     font-size: 30px;
   }
   @media (min-width: 1150px) {
@@ -15,7 +22,7 @@ const MissionStatement = styled.div`
 `;
 
 const About = () => (
-  <div style={{ maxWidth: "1200px", backgroundColor: "rgb(154, 157, 159)" }}>
+  <div style={{ maxWidth: "1200px", backgroundColor: "rgb(74, 73, 72)" }}>
     <h1>About Us</h1>
     <MissionStatement>
       BrewBuddies was formed out of a desire to improve the craft beverage

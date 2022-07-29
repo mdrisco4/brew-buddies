@@ -8,7 +8,7 @@ import styled from "styled-components";
 
 const HeaderContainer = styled.div`
   font-size: 24px;
-  background-color: rgb(154, 157, 159);
+  background-color: rgb(74, 73, 72);
   font-weight: bold;
   text-align: center;
   margin-left: auto;
@@ -46,17 +46,21 @@ const MenuLinks = styled.div`
   /* color: rgb(154, 157, 159); */
   font-weight: bold;
   width: 20%;
-  @media (min-width: 550px) {
-    font-size: 20px;
+  text-decoration: none;
+  @media (min-width: 575px) {
+    font-size: 22px;
   }
   @media (min-width: 768px) {
-    /* width: 25%; */
-  }
-  @media (min-width: 800px) {
     font-size: 24px;
   }
-  @media (min-width: 1150px) {
+  @media (min-width: 850px) {
+    font-size: 28px;
+  }
+  @media (min-width: 1024px) {
     font-size: 32px;
+  }
+  @media (min-width: 1150px) {
+    font-size: 35px;
   }
 `;
 
@@ -77,11 +81,11 @@ export default function App() {
         <HeaderContainer>
           <MenuLinksContainer>
             <MenuLinks>
-              <Link to="/">Home</Link>
+              <Link to="/" style={{ textDecoration: "none", color: "rgb(239, 206, 103)", textShadow: "2px 2px black" }}>Home</Link>
             </MenuLinks>
 
             <MenuLinks>
-              <Link to="/brands">Brands</Link>
+              <Link to="/brands" style={{ textDecoration: "none", color: "rgb(239, 206, 103)", textShadow: "2px 2px black" }}>Brands</Link>
             </MenuLinks>
 
             <MenuLinks>
@@ -91,11 +95,11 @@ export default function App() {
             </MenuLinks>
 
             <MenuLinks>
-              <Link to="/about">About Us</Link>
+              <Link to="/about" style={{ textDecoration: "none", color: "rgb(239, 206, 103)", textShadow: "2px 2px black" }}>About Us</Link>
             </MenuLinks>
 
             <MenuLinks>
-              <Link to="/contact">Contact Us</Link>
+              <Link to="/contact" style={{ textDecoration: "none", color: "rgb(239, 206, 103)", textShadow: "2px 2px black"  }}>Contact Us</Link>
             </MenuLinks>
           </MenuLinksContainer>
 
