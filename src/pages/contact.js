@@ -148,8 +148,8 @@ const FooterLogo = styled.img`
 `;
 
 const Contact = () => (
-    <div style={{ maxWidth: "1200px", marginLeft: "10%", marginRight: "10%" , backgroundColor: "blue" }}>
-      <LandingPageImage src="https://i.imgur.com/vkGHLOP.jpg" />
+    <div style={{ maxWidth: "1200px", backgroundColor: "blue" }}>
+      {/* <LandingPageImage src="https://i.imgur.com/vkGHLOP.jpg" /> */}
     {/* <BoardPhoto src="https://i.imgur.com/rpLw26n.png" /> */}
     <MissionStatement>Contact</MissionStatement>
     <h1>Contact Contact</h1>

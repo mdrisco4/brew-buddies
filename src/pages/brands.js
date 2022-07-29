@@ -147,12 +147,13 @@ const FooterLogo = styled.img`
   }
 `;
 
-const Home = () => (
-    <div style={{ maxWidth: "1200px", marginLeft: "10%", marginRight: "10%" , backgroundColor: "blue" }}>
-      <LandingPageImage src="https://i.imgur.com/vkGHLOP.jpg" />
+const Brands = () => (
+    <div style={{ maxWidth: "1200px", backgroundColor: "blue" }}>
+      {/* <LandingPageImage src="https://i.imgur.com/vkGHLOP.jpg" /> */}
     {/* <BoardPhoto src="https://i.imgur.com/rpLw26n.png" /> */}
     <MissionStatement>Brands</MissionStatement>
+    <h1>Brands Here</h1>
   </div>
 );
 
-export default Home;
+export default Brands;
