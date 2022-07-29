@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components";
 
+
+
 const TopBorder = styled.div`
   background-color: rgb(74, 73, 72);
   height: 30px;
@@ -12,6 +14,32 @@ const TopBorder = styled.div`
   }
   @media (min-width: 768px) {
     height: 45px;
+  }
+  @media (min-width: 840px) {
+    height: 50px;
+  }
+  @media (min-width: 960px) {
+    height: 56px;
+  }
+  @media (min-width: 1240px) {
+    height: 60px;
+  }
+  @media (min-width: 1150px) {
+    height: 64px;
+  }
+`;
+
+const BottomBorder = styled.div`
+  background-color: rgb(154, 157, 159);
+  height: 110px;
+  @media (min-width: 540px) {
+    height: 85px;
+  }
+  @media (min-width: 650px) {
+    height: 75px;
+  }
+  @media (min-width: 768px) {
+    height: 65px;
   }
   @media (min-width: 840px) {
     height: 50px;
@@ -54,6 +82,7 @@ const Footer = () => (
     <ContactInfo>Founder/Beer Guru</ContactInfo>
     <ContactInfo>Rob@BrewBuddiesNY.com</ContactInfo>
     <ContactInfo>(585) 813-4506</ContactInfo>
+    <BottomBorder />
   </div>
 );
 
