@@ -1,7 +1,8 @@
 import "./App.css";
-import Home from "./components/home";
-import Header from "./components/header";
-import { Route, Link } from "react-router-dom";
+import Contact from "./pages/contact.js";
+import About from "./pages/about.js";
+import Home from "./pages/home.js";
+import { BrowserRouter as Router, Switch, Route, Link, Routes } from "react-router-dom";
 // import {
 //   BrowserRouter as Router,
 //   Switch,
@@ -9,36 +10,61 @@ import { Route, Link } from "react-router-dom";
 //   Redirect,
 // } from "react-router-dom";
 
-function App() {
+// function App() {
+//   return (
+//     <div className="App">
+//       <Header />
+//       <Home />
+//     </div>
+//   );
+// }
+
+
+
+export default function App() {
   return (
-    <div className="App">
-      {/* <Router>
-        <Switch>
-          This route is for home component 
-          with exact path "/", in component props 
-          we passes the imported component
-          <Route exact path="/" component={Home} />
-
-          This route is for about component 
-          with exact path "/about", in component 
-          props we passes the imported component
-          <Route path="/about" component={About} />
-
-          This route is for contactus component
-          with exact path "/contactus", in 
-          component props we passes the imported component
-          <Route path="/contactus" component={ContactUs} />
-
-          If any route mismatches the upper 
-          route endpoints then, redirect triggers 
-          and redirects app to home component with to="/"
-          <Redirect to="/" />
-        </Switch>
-      </Router> */}
-      <Header />
-      <Home />
+    <div>
+      <h1>hello world</h1>
+      <Router>
+      <div>
+        <ul>
+          <li>
+          <Link to="/">Home</Link>
+          </li>
+            <li>
+            <Link to="/about">About</Link>
+            </li>
+            <li>
+            <Link to="contact">Contact</Link>
+            </li>
+        </ul>
+      <Routes>
+        <Route path="/" exact element={<Home/>}>
+          {/* <Home /> */}
+        </Route>
+        <Route path="/about" exact element={<About/>}>
+          {/* <About /> */}
+        </Route>
+        <Route path="contact" exact element={<Contact/>}>
+          {/* <Contact /> */}
+        </Route>
+      </Routes>
+      </div>
+      </Router>
     </div>
+
+
+    
   );
 }
 
-export default App;
+
+
+
+
+
+
+
+
+
+{/* export default App; */}

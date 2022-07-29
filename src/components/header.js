@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-
-
+import Contact from "../pages/contact.js";
+import { Route, Link } from "react-router-dom";
 
 const HeaderContainer = styled.div`
   font-size: 24px;
@@ -54,21 +54,26 @@ const MenuLinks = styled.a`
 `;
 
 const Logo = styled.img`
-width: 20%;
-margin-left: auto;
+  width: 20%;
+  margin-left: auto;
   margin-right: auto;
-@media (min-width: 768px) {
+  @media (min-width: 768px) {
     margin-left: initial;
-  margin-right: initial;
+    margin-right: initial;
   }
 `;
-
 
 const Header = () => (
   <div style={{ maxWidth: "1200px", marginLeft: "10%", marginRight: "10%" }}>
     <HeaderContainer>
       <MenuLinksContainer>
         <MenuLinks>Contact Us</MenuLinks>
+        {/* <Link></Link> */}
+        {/* <Link to="/about">About</Link> */}
+        {/* <Link className="contact" to="/Contact">
+          <MenuLinks>Contact Us</MenuLinks>
+        </Link> */}
+        {/* <Route path="/Contact" exact component={Contact} /> */}
         <MenuLinks>Brands</MenuLinks>
         <Logo src="https://i.imgur.com/rpLw26n.png" />
         <MenuLinks>About Us</MenuLinks>
