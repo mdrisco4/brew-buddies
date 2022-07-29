@@ -18,12 +18,12 @@ const LandingPagePromptOne = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   font-size: 25px;
-  -webkit-text-stroke: 2px black;
   @media (min-width: 540px) {
     top: 44%;
     font-size: 30px;
   }
   @media (min-width: 650px) {
+    -webkit-text-stroke: 2px black;
     top: 45%;
     font-size: 34px;
   }
