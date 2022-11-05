@@ -5,10 +5,11 @@ import Contact from "./pages/contact.js";
 import Footer from "./components/footer.js";
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 import styled from "styled-components";
+import { slide as Menu } from 'react-burger-menu'
 
 const HeaderContainer = styled.div`
   font-size: 24px;
-  background-color: rgb(74, 73, 72);
+  background-color: rgb(135, 180, 225);
   font-weight: bold;
   text-align: center;
   margin-left: auto;
@@ -78,15 +79,21 @@ const Logo = styled.img`
 export default function App() {
   return (
     <div>
+      {/* <Menu>
+        <a id="home" className="menu-item" href="/">Home</a>
+        <a id="about" className="menu-item" href="/about">About</a>
+        <a id="contact" className="menu-item" href="/contact">Contact</a>
+        <a onClick={ this.showSettings } className="menu-item--small" href="">Settings</a>
+      </Menu> */}
       <Router>
         <HeaderContainer>
           <MenuLinksContainer>
             <MenuLinks>
-              <Link to="/" style={{ textDecoration: "none", color: "rgb(239, 206, 103)", textShadow: "2px 2px black" }}>Home</Link>
+              <Link to="/" style={{ textDecoration: "none", color: "black" }}>Home</Link>
             </MenuLinks>
 
             <MenuLinks>
-              <Link to="/brands" style={{ textDecoration: "none", color: "rgb(239, 206, 103)", textShadow: "2px 2px black" }}>Brands</Link>
+              <Link to="/brands" style={{ textDecoration: "none", color: "black" }}>Brands</Link>
             </MenuLinks>
 
             <MenuLinks>
@@ -96,11 +103,11 @@ export default function App() {
             </MenuLinks>
 
             <MenuLinks>
-              <Link to="/about" style={{ textDecoration: "none", color: "rgb(239, 206, 103)", textShadow: "2px 2px black" }}>About Us</Link>
+              <Link to="/about" style={{ textDecoration: "none", color: "black" }}>About Us</Link>
             </MenuLinks>
 
             <MenuLinks>
-              <Link to="/contact" style={{ textDecoration: "none", color: "rgb(239, 206, 103)", textShadow: "2px 2px black"  }}>Contact Us</Link>
+              <Link to="/contact" style={{ textDecoration: "none", color: "black"  }}>Contact Us</Link>
             </MenuLinks>
           </MenuLinksContainer>
 

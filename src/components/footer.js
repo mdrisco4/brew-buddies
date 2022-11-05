@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 
 const TopBorder = styled.div`
-  background-color: rgb(74, 73, 72);
+  background-color: rgb(135, 180, 225);
   height: 30px;
   font-size: 1px;
   @media (min-width: 540px) {
@@ -31,7 +31,7 @@ const TopBorder = styled.div`
 `;
 
 const BottomBorder = styled.div`
-  background-color: rgb(154, 157, 159);
+  background-color: rgb(220, 180, 180);
   height: 250px;
   @media (min-width: 540px) {
     height: 185px;
@@ -76,7 +76,7 @@ const ContactInfo = styled.div`
 `;
 
 const Footer = () => (
-  <div style={{ maxWidth: "15000px", backgroundColor: "rgb(154, 157, 159)", textAlign: "center" }}>
+  <div style={{ maxWidth: "15000px", backgroundColor: "rgb(220, 180, 180)", textAlign: "center" }}>
     <TopBorder />
     <Logo src="https://i.imgur.com/rpLw26n.png" />
     <ContactInfo>Rob Richenberg</ContactInfo>

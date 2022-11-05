@@ -44,30 +44,33 @@ const Logo = styled.img`
 `;
 
 const Brands = () => (
-  <div style={{ maxWidth: "15000px", backgroundColor: "rgb(74, 73, 72)", textAlign: "center" }}>
-    <h1>BrewBuddies Brands</h1>
+  <div style={{ maxWidth: "15000px", backgroundColor: "rgb(135, 180, 225)", textAlign: "center" }}>
+    <h1>Featured Brands</h1>
     <BrandInfo>
       We strive to bring you the best in craft beer with our services. If you
       would like to get a brand you do not see featured here please inquire.
     </BrandInfo>
     <LogoContainer>
-      <BrandLink href="https://threeheadsbrewing.com/" target="_blank">
-        <Logo src="https://i.imgur.com/xYO0SLc.png" />
+      <BrandLink href="https://sagerbeerworks.com/" target="_blank">
+        <Logo src="https://i.imgur.com/mUt147R.jpg" />
       </BrandLink>
-      <BrandLink href="https://northcoastbrewing.com/" target="blank">
-        <Logo src="https://i.imgur.com/Vk5ylrJ.jpg" />
+      <BrandLink href="https://elifishbrewing.com/" target="blank">
+        <Logo src="https://i.imgur.com/Xns4WcX.png" />
       </BrandLink>
-      <BrandLink href="https://www.redbear.beer/" target="_blank">
-        <Logo src="https://i.imgur.com/wxPVsA5.jpg" />
+      <BrandLink href="https://www.lillybellemeads.com/" target="_blank">
+        <Logo src="https://i.imgur.com/NUr7F8O.png" />
       </BrandLink>
-      <BrandLink href="https://www.stonebrewing.com/" target="_blank">
-        <Logo src="https://i.imgur.com/33Tp5t4.png" />
+      <BrandLink href="https://www.westshorebrewing.com/" target="_blank">
+        <Logo src="https://i.imgur.com/9JdZvY0.png" />
       </BrandLink>
-      <BrandLink href="https://www.breckbrew.com/" target="_blank">
-        <Logo src="https://i.imgur.com/5878TcE.png" />
+      <BrandLink href="http://rustynickelbrewing.com/" target="_blank">
+        <Logo src="https://i.imgur.com/PUEJmsR.jpg" />
       </BrandLink>
-      <BrandLink href="https://bellsbeer.com/" target="_blank">
-        <Logo src="https://i.imgur.com/O2OXJkV.jpg" />
+      <BrandLink href="https://ninemaidensbrewing.com/" target="_blank">
+        <Logo src="https://i.imgur.com/sPjMWdH.jpg" />
+      </BrandLink>
+      <BrandLink href="https://www.butternutsbeerandale.com/" target="_blank">
+        <Logo src="https://i.imgur.com/Vv4AcHe.png" />
       </BrandLink>
     </LogoContainer>
   </div>
