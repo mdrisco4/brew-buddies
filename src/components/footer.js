@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-
+import "../styles/fonts.css"
 
 
 const TopBorder = styled.div`
@@ -69,6 +69,7 @@ const Logo = styled.img`
 const ContactInfo = styled.div`
   text-align: center;
   font-size: 20px;
+  font-family: 'Comfortaa', cursive;
   @media (min-width: 768px) {
     /* margin-left: initial;
     margin-right: initial; */

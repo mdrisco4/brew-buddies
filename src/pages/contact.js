@@ -1,8 +1,13 @@
 import React from "react";
 import styled from "styled-components";
 
+const ContactHeader = styled.h1`
+  font-family: 'Comfortaa', cursive;
+`;
+
 const ContactInfo = styled.div`
   text-align: center;
+  font-family: 'Comfortaa', cursive;
   font-size: 24px;
   @media (min-width: 480px) {
     font-size: 27px;
@@ -28,8 +33,8 @@ const ContactInfo = styled.div`
 `;
 
 const Contact = () => (
-  <div style={{ maxWidth: "15000px", backgroundColor: "rgb(74, 73, 72)", textAlign: "center" }}>
-    <h3>Reach Out Any Time!</h3>
+  <div style={{ maxWidth: "15000px", backgroundColor: "rgb(135, 180, 225)", textAlign: "center" }}>
+    <ContactHeader>Reach Out Any Time!</ContactHeader>
     <ContactInfo>Rob Richenberg</ContactInfo>
     <ContactInfo>Founder/Beer Guru</ContactInfo>
     <ContactInfo>Rob@BrewBuddiesNY.com</ContactInfo>

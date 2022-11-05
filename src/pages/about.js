@@ -1,8 +1,14 @@
 import React from "react";
 import styled from "styled-components";
+import "../styles/fonts.css"
+
+const AboutHeader = styled.h1`
+  font-family: 'Comfortaa', cursive;
+`;
 
 const MissionStatement = styled.div`
   font-size: 14px;
+  font-family: 'Comfortaa', cursive;
   text-align: center;
   font-weight: bold;
   margin-left: 6%;
@@ -21,8 +27,8 @@ const MissionStatement = styled.div`
 `;
 
 const About = () => (
-  <div style={{ maxWidth: "15000px", backgroundColor: "rgb(74, 73, 72)", textAlign: "center" }}>
-    <h1>About Us</h1>
+  <div style={{ maxWidth: "15000px", backgroundColor: "rgb(135, 180, 225)", textAlign: "center" }}>
+    <AboutHeader>About Us</AboutHeader>
     <MissionStatement>
       BrewBuddies was formed out of a desire to improve the craft beverage
       experience for breweries, bars, restaurants, and the consumers themselves.

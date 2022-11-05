@@ -67,7 +67,7 @@ const Header = () => (
   <div style={{ maxWidth: "1200px", marginLeft: "10%", marginRight: "10%" }}>
     <HeaderContainer>
       <MenuLinksContainer>
-        <MenuLinks>Contact Us</MenuLinks>
+        <MenuLinks>Contact</MenuLinks>
         {/* <Link></Link> */}
         {/* <Link to="/about">About</Link> */}
         {/* <Link className="contact" to="/Contact">
@@ -76,7 +76,7 @@ const Header = () => (
         {/* <Route path="/Contact" exact component={Contact} /> */}
         <MenuLinks>Brands</MenuLinks>
         <Logo src="https://i.imgur.com/rpLw26n.png" />
-        <MenuLinks>About Us</MenuLinks>
+        <MenuLinks>About</MenuLinks>
         <MenuLinks>Extra Link</MenuLinks>
       </MenuLinksContainer>
     </HeaderContainer>

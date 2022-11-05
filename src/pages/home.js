@@ -96,8 +96,8 @@ const Home = () => (
   >
     <LandingPageContainer>
       <LandingPageImage src="https://i.imgur.com/lFmBaFx.jpg" />
-      <LandingPagePromptOne>Placeholder</LandingPagePromptOne>
-      <LandingPagePromptTwo>Text</LandingPagePromptTwo>
+      <LandingPagePromptOne></LandingPagePromptOne>
+      <LandingPagePromptTwo></LandingPagePromptTwo>
     </LandingPageContainer>
   </div>
 );

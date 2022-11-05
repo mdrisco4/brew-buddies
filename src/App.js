@@ -5,7 +5,7 @@ import Contact from "./pages/contact.js";
 import Footer from "./components/footer.js";
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 import styled from "styled-components";
-import { slide as Menu } from 'react-burger-menu'
+import "./styles/fonts.css";
 
 const HeaderContainer = styled.div`
   font-size: 24px;
@@ -28,7 +28,7 @@ const MenuLinksContainer = styled.div`
   align-items: center;
   justify-content: center;
   @media (min-width: 650px) {
-  justify-content: space-between;
+    justify-content: space-between;
     padding-left: 10px;
     padding-right: 10px;
   }
@@ -41,19 +41,34 @@ const MenuLinksContainer = styled.div`
   }
 `;
 
+const MenuLinksMobile = styled.div`
+  width: 70%;
+@media (min-width: 768px) {
+  display: none;
+  }
+`;
+
+const MenuLinksBigScreen = styled.div`
+  display: none;
+@media (min-width: 768px) {
+  display: block;
+  }
+`;
+
 const MenuLinks = styled.div`
-  font-size: 15px;
-  margin-left: 10px;
-  margin-right: 10px;
+  font-size: 35px;
+  font-family: "Comfortaa", cursive;
   margin-top: 3.5%;
   /* color: rgb(154, 157, 159); */
   font-weight: bold;
-  width: 20%;
   text-decoration: none;
   @media (min-width: 575px) {
-    font-size: 22px;
+    font-size: 42px;
   }
   @media (min-width: 768px) {
+    width: 20%;
+    margin-left: 10px;
+    margin-right: 10px;
     font-size: 24px;
   }
   @media (min-width: 850px) {
@@ -79,35 +94,52 @@ const Logo = styled.img`
 export default function App() {
   return (
     <div>
-      {/* <Menu>
-        <a id="home" className="menu-item" href="/">Home</a>
-        <a id="about" className="menu-item" href="/about">About</a>
-        <a id="contact" className="menu-item" href="/contact">Contact</a>
-        <a onClick={ this.showSettings } className="menu-item--small" href="">Settings</a>
-      </Menu> */}
       <Router>
         <HeaderContainer>
           <MenuLinksContainer>
-            <MenuLinks>
-              <Link to="/" style={{ textDecoration: "none", color: "black" }}>Home</Link>
-            </MenuLinks>
-
-            <MenuLinks>
-              <Link to="/brands" style={{ textDecoration: "none", color: "black" }}>Brands</Link>
-            </MenuLinks>
-
-            <MenuLinks>
+            <MenuLinksMobile>
               <Link to="/">
                 <Logo src="https://i.imgur.com/rpLw26n.png" />
+              </Link>
+            </MenuLinksMobile>
+
+            <MenuLinks>
+              <Link to="/" style={{ textDecoration: "none", color: "black" }}>
+                Home
               </Link>
             </MenuLinks>
 
             <MenuLinks>
-              <Link to="/about" style={{ textDecoration: "none", color: "black" }}>About Us</Link>
+              <Link
+                to="/brands"
+                style={{ textDecoration: "none", color: "black" }}
+              >
+                Brands
+              </Link>
+            </MenuLinks>
+
+            <MenuLinksBigScreen>
+              <Link to="/">
+                <Logo src="https://i.imgur.com/rpLw26n.png" />
+              </Link>
+            </MenuLinksBigScreen>
+
+            <MenuLinks>
+              <Link
+                to="/about"
+                style={{ textDecoration: "none", color: "black" }}
+              >
+                About
+              </Link>
             </MenuLinks>
 
             <MenuLinks>
-              <Link to="/contact" style={{ textDecoration: "none", color: "black"  }}>Contact Us</Link>
+              <Link
+                to="/contact"
+                style={{ textDecoration: "none", color: "black" }}
+              >
+                Contact
+              </Link>
             </MenuLinks>
           </MenuLinksContainer>
 
