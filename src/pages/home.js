@@ -10,6 +10,7 @@ const LandingPageContainer = styled.div`
 const LandingPageImage = styled.img`
   width: 100%;
   margin-bottom: none !important;
+  border-top: 30px;
 `;
 
 const LandingPagePromptOne = styled.div`

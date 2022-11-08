@@ -1,3 +1,4 @@
+import React, { useState } from "react";
 import Home from "./pages/home.js";
 import Brands from "./pages/brands.js";
 import About from "./pages/about.js";
@@ -6,6 +7,42 @@ import Footer from "./components/footer.js";
 import { BrowserRouter as Router, Route, Link, Routes } from "react-router-dom";
 import styled from "styled-components";
 import "./styles/fonts.css";
+import Navbar from "./components/Nav/navbar.js";
+import Burger from "./components/Nav/burger.js";
+
+const StyledBurger = styled.div`
+  width: 2rem;
+  height: 2rem;
+  position: fixed;
+  top: 15px;
+  right: 20px;
+  display: flex;
+  justify-content: space-around;
+  flex-flow: column nowrap;
+  z-index: 20;
+
+  div {
+    width: 2rem;
+    height: 0.25rem;
+    background-color: ${({ open }) => (open ? "#ccc" : "#333")};
+    border-radius: 10px;
+    transform-origin: 1px;
+    transition: all 0.3s linear;
+
+    &:nth-child(1) {
+      transform: ${({ open }) => (open ? "rotate(45deg)" : "rotate(0)")};
+    }
+
+    &:nth-child(2) {
+      transform: ${({ open }) => (open ? "translateX(100%)" : "translateX(0)")};
+      opacity: ${({ open }) => (open ? "0" : "1")};
+    }
+
+    &:nth-child(3) {
+      transform: ${({ open }) => (open ? "rotate(-45deg)" : "rotate(0)")};
+    }
+  }
+`;
 
 const HeaderContainer = styled.div`
   font-size: 24px;
@@ -21,19 +58,31 @@ const HeaderContainer = styled.div`
   }
 `;
 
-const MenuLinksContainer = styled.div`
+const MenuLinksContainer = styled.ul`
   display: flex;
-  flex-direction: column;
-  margin-bottom: 12px;
-  align-items: center;
-  justify-content: center;
+  /* display: none; */
+  list-style: none;
+  flex-flow: column nowrap;
+  position: fixed;
+  transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
+  top: 0;
+  right: 0;
+  height: 50vh;
+  width: 100%;
+  padding-top: 3.5rem;
+  transition: transform 0.3s ease-in-out;
+  z-index: 10;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: rgb(220, 180, 180);
+  /* flex-direction: column; */
+  /* margin-bottom: 12px; */
+  /* align-items: center; */
+  /* justify-content: center; */
   @media (min-width: 650px) {
-    justify-content: space-between;
-    padding-left: 10px;
-    padding-right: 10px;
   }
   @media (min-width: 768px) {
-    flex-direction: row;
   }
   @media (min-width: 800px) {
   }
@@ -43,19 +92,19 @@ const MenuLinksContainer = styled.div`
 
 const MenuLinksMobile = styled.div`
   width: 70%;
-@media (min-width: 768px) {
-  display: none;
+  @media (min-width: 768px) {
+    display: none;
   }
 `;
 
 const MenuLinksBigScreen = styled.div`
   display: none;
-@media (min-width: 768px) {
-  display: block;
+  @media (min-width: 768px) {
+    display: block;
   }
 `;
 
-const MenuLinks = styled.div`
+const MenuLinks = styled.li`
   font-size: 35px;
   font-family: "Comfortaa", cursive;
   margin-top: 3.5%;
@@ -69,47 +118,63 @@ const MenuLinks = styled.div`
     width: 20%;
     margin-left: 10px;
     margin-right: 10px;
-    font-size: 24px;
+    font-size: 30px;
   }
   @media (min-width: 850px) {
-    font-size: 28px;
+    font-size: 35px;
   }
   @media (min-width: 1024px) {
-    font-size: 32px;
+    font-size: 42px;
   }
   @media (min-width: 1150px) {
-    font-size: 35px;
+    font-size: 45px;
+  }
+`;
+
+const LogoFLexBox = styled.div`
+  display: flex;
+  flex-flow: row;
+`;
+
+const LogoBorders = styled.div`
+  width: 20%;
+  background-color: rgb(135, 180, 225);
+  @media (min-width: 768px) {
   }
 `;
 
 const Logo = styled.img`
-  width: 100%;
-  /* padding-left: 180%; */
+  width: 60%;
+  background-color: rgb(135, 180, 225);
   @media (min-width: 768px) {
-    /* margin-left: initial;
-    margin-right: initial; */
   }
 `;
 
 export default function App() {
+  const [open, setOpen] = useState(false);
+
   return (
     <div>
+      <LogoFLexBox>
+        <LogoBorders />
+        <Logo src="https://i.imgur.com/rpLw26n.png" />
+        <LogoBorders />
+      </LogoFLexBox>
+      <StyledBurger open={open} onClick={() => setOpen(!open)}>
+        <div></div>
+        <div></div>
+        <div></div>
+      </StyledBurger>
       <Router>
         <HeaderContainer>
-          <MenuLinksContainer>
-            <MenuLinksMobile>
-              <Link to="/">
-                <Logo src="https://i.imgur.com/rpLw26n.png" />
-              </Link>
-            </MenuLinksMobile>
-
-            <MenuLinks>
+          <MenuLinksContainer open={open}>
+            <MenuLinks open={open} onClick={() => setOpen(!open)}>
               <Link to="/" style={{ textDecoration: "none", color: "black" }}>
                 Home
               </Link>
             </MenuLinks>
 
-            <MenuLinks>
+            <MenuLinks open={open} onClick={() => setOpen(!open)}>
               <Link
                 to="/brands"
                 style={{ textDecoration: "none", color: "black" }}
@@ -118,13 +183,7 @@ export default function App() {
               </Link>
             </MenuLinks>
 
-            <MenuLinksBigScreen>
-              <Link to="/">
-                <Logo src="https://i.imgur.com/rpLw26n.png" />
-              </Link>
-            </MenuLinksBigScreen>
-
-            <MenuLinks>
+            <MenuLinks open={open} onClick={() => setOpen(!open)}>
               <Link
                 to="/about"
                 style={{ textDecoration: "none", color: "black" }}
@@ -133,7 +192,7 @@ export default function App() {
               </Link>
             </MenuLinks>
 
-            <MenuLinks>
+            <MenuLinks open={open} onClick={() => setOpen(!open)}>
               <Link
                 to="/contact"
                 style={{ textDecoration: "none", color: "black" }}
