@@ -1,33 +1,55 @@
 import React from "react";
 import styled from "styled-components";
-import "../styles/fonts.css"
+import "../styles/fonts.css";
 
 const AboutHeader = styled.h1`
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
+  padding-top: 50px;
+  text-decoration: underline;
 `;
 
 const MissionStatement = styled.div`
   font-size: 14px;
-  font-family: 'Comfortaa', cursive;
-  text-align: center;
+  font-family: "Comfortaa", cursive;
+  text-align: left;
   font-weight: bold;
   margin-left: 6%;
   margin-right: 6%;
+  padding-top: 30px;
   @media (min-width: 550px) {
     font-size: 18px;
+    margin-left: 9%;
+    margin-right: 9%;
   }
   @media (min-width: 640px) {
     font-size: 22px;
+    margin-left: 11%;
+    margin-right: 11%;
   }
   @media (min-width: 768px) {
     font-size: 30px;
+    margin-left: 4%;
+    margin-right: 4%;
+    text-align: center;
+  }
+  @media (min-width: 950px) {
+    margin-left: 9%;
+    margin-right: 9%;
   }
   @media (min-width: 1150px) {
+    margin-left: 15%;
+    margin-right: 15%;
   }
 `;
 
 const About = () => (
-  <div style={{ maxWidth: "15000px", backgroundColor: "rgb(135, 180, 225)", textAlign: "center" }}>
+  <div
+    style={{
+      maxWidth: "15000px",
+      backgroundColor: "rgb(135, 180, 225)",
+      textAlign: "center",
+    }}
+  >
     <AboutHeader>About Us</AboutHeader>
     <MissionStatement>
       BrewBuddies was formed out of a desire to improve the craft beverage

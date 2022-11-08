@@ -24,7 +24,7 @@ const StyledBurger = styled.div`
   div {
     width: 2rem;
     height: 0.25rem;
-    background-color: ${({ open }) => (open ? "#ccc" : "#333")};
+    background-color: ${({ open }) => (open ? "rgb(135, 180, 225)" : "rgb(220, 180, 180)")};
     border-radius: 10px;
     transform-origin: 1px;
     transition: all 0.3s linear;
@@ -67,7 +67,7 @@ const MenuLinksContainer = styled.ul`
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
   top: 0;
   right: 0;
-  height: 50vh;
+  height: 60vh;
   width: 100%;
   padding-top: 3.5rem;
   transition: transform 0.3s ease-in-out;
@@ -115,9 +115,9 @@ const MenuLinks = styled.li`
     font-size: 42px;
   }
   @media (min-width: 768px) {
-    width: 20%;
-    margin-left: 10px;
-    margin-right: 10px;
+    /* width: 20%; */
+    /* margin-left: 10px;
+    margin-right: 10px; */
     font-size: 30px;
   }
   @media (min-width: 850px) {
@@ -131,21 +131,44 @@ const MenuLinks = styled.li`
   }
 `;
 
+// const LogoLink = styled.div`
+//   width: 0;
+//   @media (min-width: 575px) {
+
+//   }
+//   @media (min-width: 768px) {
+
+//   }
+//   @media (min-width: 850px) {
+
+//   }
+//   @media (min-width: 1024px) {
+
+//   }
+//   @media (min-width: 1150px) {
+
+//   }
+// `;
+
 const LogoFLexBox = styled.div`
   display: flex;
   flex-flow: row;
+  /* width: 100%; */
 `;
 
 const LogoBorders = styled.div`
-  width: 20%;
+  width: 500%;
   background-color: rgb(135, 180, 225);
+  display: block;
   @media (min-width: 768px) {
   }
 `;
 
 const Logo = styled.img`
-  width: 60%;
+  width: 100%;
   background-color: rgb(135, 180, 225);
+  padding-bottom: 20px;
+  display: block;
   @media (min-width: 768px) {
   }
 `;
@@ -155,17 +178,19 @@ export default function App() {
 
   return (
     <div>
-      <LogoFLexBox>
-        <LogoBorders />
-        <Logo src="https://i.imgur.com/rpLw26n.png" />
-        <LogoBorders />
-      </LogoFLexBox>
       <StyledBurger open={open} onClick={() => setOpen(!open)}>
         <div></div>
         <div></div>
         <div></div>
       </StyledBurger>
       <Router>
+        <LogoFLexBox>
+          <LogoBorders />
+          <Link to="/">
+            <Logo src="https://i.imgur.com/rpLw26n.png" />
+          </Link>
+          <LogoBorders />
+        </LogoFLexBox>
         <HeaderContainer>
           <MenuLinksContainer open={open}>
             <MenuLinks open={open} onClick={() => setOpen(!open)}>

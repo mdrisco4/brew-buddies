@@ -4,6 +4,8 @@ import "../styles/fonts.css"
 
 const BrandHeader = styled.h1`
   font-family: 'Comfortaa', cursive;
+  padding-top: 50px;
+  text-decoration: underline;
 `;
 
 const BrandInfo = styled.div`
@@ -15,6 +17,8 @@ const BrandInfo = styled.div`
   margin-bottom: 15px;
   margin-left: 8%;
   margin-right: 8%;
+  padding-top: 20px;
+  padding-bottom: 30px;
   @media (min-width: 800px) {
     font-size: 30px;
   }

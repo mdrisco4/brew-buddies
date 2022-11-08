@@ -3,6 +3,9 @@ import styled from "styled-components";
 
 const ContactHeader = styled.h1`
   font-family: 'Comfortaa', cursive;
+  padding-top: 50px;
+  padding-bottom: 30px;
+  text-decoration: underline;
 `;
 
 const ContactInfo = styled.div`
