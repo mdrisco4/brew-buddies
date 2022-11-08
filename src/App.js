@@ -67,7 +67,7 @@ const MenuLinksContainer = styled.ul`
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
   top: 0;
   right: 0;
-  height: 42%;
+  height: 300px;
   width: 100%;
   padding-top: 3.5rem;
   transition: transform 0.3s ease-in-out;
@@ -81,27 +81,29 @@ const MenuLinksContainer = styled.ul`
   /* align-items: center; */
   /* justify-content: center; */
   @media (min-width: 450px) {
-    height: 45%;
+    height: 320px;
   }
   @media (min-width: 575px) {
-    height: 51%;
+    height: 325px;
     width: 50%;
   }
   @media (min-width: 650px) {
-    height: 54%;
+    height: 320px;
   }
   @media (min-width: 768px) {
-    height: 60%;
+    height: 340px;
   }
   @media (min-width: 850px) {
-    height: 64%;
+    height: 360px;
   }
   @media (min-width: 980px) {
-    height: 68%;
+    height: 396px;
   }
   @media (min-width: 1150px) {
+    height: 420px;
   }
   @media (min-width: 1280px) {
+    height: 450px;
   }
 `;
 
