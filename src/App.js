@@ -67,26 +67,40 @@ const MenuLinksContainer = styled.ul`
   transform: ${({ open }) => (open ? "translateX(0)" : "translateX(100%)")};
   top: 0;
   right: 0;
-  height: 60vh;
-  width: 100%;
+  height: 42%;
+  width: 50%;
   padding-top: 3.5rem;
   transition: transform 0.3s ease-in-out;
   z-index: 10;
-  justify-content: space-between;
-  padding-left: 10px;
-  padding-right: 10px;
+  /* justify-content: space-between; */ /*May re-add this styling*/
+  /* padding-left: 10px;
+  padding-right: 10px; */
   background-color: rgb(220, 180, 180);
   /* flex-direction: column; */
   /* margin-bottom: 12px; */
   /* align-items: center; */
   /* justify-content: center; */
+  @media (min-width: 450px) {
+    height: 45%;
+  }
+  @media (min-width: 575px) {
+    height: 51%;
+  }
   @media (min-width: 650px) {
+    height: 54%;
   }
   @media (min-width: 768px) {
+    height: 60%;
   }
-  @media (min-width: 800px) {
+  @media (min-width: 850px) {
+    height: 64%;
+  }
+  @media (min-width: 980px) {
+    height: 68%;
   }
   @media (min-width: 1150px) {
+  }
+  @media (min-width: 1280px) {
   }
 `;
 
@@ -118,16 +132,19 @@ const MenuLinks = styled.li`
     /* width: 20%; */
     /* margin-left: 10px;
     margin-right: 10px; */
-    font-size: 30px;
+    font-size: 45px;
   }
   @media (min-width: 850px) {
-    font-size: 35px;
+    font-size: 50px;
   }
-  @media (min-width: 1024px) {
-    font-size: 42px;
+  @media (min-width: 980px) {
+    font-size: 54px;
   }
   @media (min-width: 1150px) {
-    font-size: 45px;
+    /* font-size: 42px; */
+  }
+  @media (min-width: 1280px) {
+    /* font-size: 45px; */
   }
 `;
 
