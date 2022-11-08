@@ -68,7 +68,7 @@ const MenuLinksContainer = styled.ul`
   top: 0;
   right: 0;
   height: 42%;
-  width: 50%;
+  width: 100%;
   padding-top: 3.5rem;
   transition: transform 0.3s ease-in-out;
   z-index: 10;
@@ -85,6 +85,7 @@ const MenuLinksContainer = styled.ul`
   }
   @media (min-width: 575px) {
     height: 51%;
+    width: 50%;
   }
   @media (min-width: 650px) {
     height: 54%;
@@ -145,6 +146,9 @@ const MenuLinks = styled.li`
   }
   @media (min-width: 1280px) {
     /* font-size: 45px; */
+  }
+  :hover {
+    background-color: rgb(135, 180, 225);
   }
 `;
 
