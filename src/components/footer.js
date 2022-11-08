@@ -60,6 +60,7 @@ const Logo = styled.img`
   width: 20%;
   margin-left: 40%;
   margin-right: 40%;
+  padding-top: 40px;
   @media (min-width: 768px) {
     /* margin-left: initial;
     margin-right: initial; */
@@ -84,7 +85,7 @@ const Footer = () => (
     <ContactInfo>Founder/Beer Guru</ContactInfo>
     <ContactInfo>Rob@BrewBuddiesNY.com</ContactInfo>
     <ContactInfo>(585) 813-4506</ContactInfo>
-    <BottomBorder>_</BottomBorder>
+    <BottomBorder />
   </div>
 );
 

@@ -1,11 +1,36 @@
 import React from "react";
 import styled from "styled-components";
 
-const ContactHeader = styled.h1`
+const ContactHeader = styled.div`
   font-family: 'Comfortaa', cursive;
   padding-top: 50px;
   padding-bottom: 30px;
   text-decoration: underline;
+  font-size: 28px;
+  @media (min-width: 480px) {
+    font-size: 33px;
+  }
+  @media (min-width: 576px) {
+    font-size: 36px;
+  }
+  @media (min-width: 650px) {
+    font-size: 40px;
+  }
+  @media (min-width: 768px) {
+    font-size: 45px;
+  }
+  @media (min-width: 870px) {
+    font-size: 49px;
+  }
+  @media (min-width: 980px) {
+    font-size: 54px;
+  }
+  @media (min-width: 1100px) {
+    font-size: 60px;
+  }
+  @media (min-width: 1260px) {
+    font-size: 66px;
+  }
 `;
 
 const ContactInfo = styled.div`
@@ -17,6 +42,9 @@ const ContactInfo = styled.div`
   }
   @media (min-width: 576px) {
     font-size: 30px;
+  }
+  @media (min-width: 650px) {
+    font-size: 33px;
   }
   @media (min-width: 768px) {
     font-size: 35px;

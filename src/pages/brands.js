@@ -6,6 +6,30 @@ const BrandHeader = styled.h1`
   font-family: 'Comfortaa', cursive;
   padding-top: 50px;
   text-decoration: underline;
+  @media (min-width: 480px) {
+
+  }
+  @media (min-width: 576px) {
+
+  }
+  @media (min-width: 650px) {
+    
+  }
+  @media (min-width: 768px) {
+    
+  }
+  @media (min-width: 870px) {
+    
+  }
+  @media (min-width: 980px) {
+    
+  }
+  @media (min-width: 1100px) {
+    
+  }
+  @media (min-width: 1260px) {
+    
+  }
 `;
 
 const BrandInfo = styled.div`
@@ -19,11 +43,30 @@ const BrandInfo = styled.div`
   margin-right: 8%;
   padding-top: 20px;
   padding-bottom: 30px;
-  @media (min-width: 800px) {
-    font-size: 30px;
-  }
-  @media (min-width: 1150px) {
-  }
+  @media (min-width: 480px) {
+
+}
+@media (min-width: 576px) {
+
+}
+@media (min-width: 650px) {
+  
+}
+@media (min-width: 768px) {
+  
+}
+@media (min-width: 870px) {
+  
+}
+@media (min-width: 980px) {
+  
+}
+@media (min-width: 1100px) {
+  
+}
+@media (min-width: 1260px) {
+  
+}
 `;
 
 const LogoContainer1 = styled.div`
