@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import "../styles/fonts.css"
-
+import "../styles/fonts.css";
 
 const TopBorder = styled.div`
   background-color: rgb(135, 180, 225);
@@ -62,23 +61,25 @@ const Logo = styled.img`
   margin-right: 40%;
   padding-top: 40px;
   @media (min-width: 768px) {
-    /* margin-left: initial;
-    margin-right: initial; */
   }
 `;
 
 const ContactInfo = styled.div`
   text-align: center;
   font-size: 20px;
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
   @media (min-width: 768px) {
-    /* margin-left: initial;
-    margin-right: initial; */
   }
 `;
 
 const Footer = () => (
-  <div style={{ maxWidth: "15000px", backgroundColor: "rgb(220, 180, 180)", textAlign: "center" }}>
+  <div
+    style={{
+      maxWidth: "15000px",
+      backgroundColor: "rgb(220, 180, 180)",
+      textAlign: "center",
+    }}
+  >
     <TopBorder />
     <Logo src="https://i.imgur.com/rpLw26n.png" />
     <ContactInfo>Rob Richenberg</ContactInfo>

@@ -3,13 +3,14 @@ import styled from "styled-components";
 import Contact from "../pages/contact.js";
 import { Route, Link } from "react-router-dom";
 
+/* CAN I JUST DELETE THIS FILE? */
+/* DOUBLE CHECK BEFORE */
+
 const HeaderContainer = styled.div`
   font-size: 24px;
   text-align: center;
   background-color: rgb(154, 157, 159);
   font-weight: bold;
-  /* border-bottom: 200px;
-  border-color: rgb(154, 157, 159); */
   @media (min-width: 800px) {
     font-size: 30px;
   }
@@ -40,7 +41,6 @@ const MenuLinks = styled.a`
   margin-left: 10px;
   margin-right: 10px;
   margin-top: 3.5%;
-  /* color: rgb(154, 157, 159); */
   font-weight: bold;
   @media (min-width: 550px) {
     font-size: 20px;
@@ -68,12 +68,6 @@ const Header = () => (
     <HeaderContainer>
       <MenuLinksContainer>
         <MenuLinks>Contact</MenuLinks>
-        {/* <Link></Link> */}
-        {/* <Link to="/about">About</Link> */}
-        {/* <Link className="contact" to="/Contact">
-          <MenuLinks>Contact Us</MenuLinks>
-        </Link> */}
-        {/* <Route path="/Contact" exact component={Contact} /> */}
         <MenuLinks>Brands</MenuLinks>
         <Logo src="https://i.imgur.com/rpLw26n.png" />
         <MenuLinks>About</MenuLinks>

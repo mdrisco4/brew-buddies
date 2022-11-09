@@ -34,10 +34,9 @@ const BrandHeader = styled.div`
 `;
 
 const BrandInfo = styled.div`
+  text-align: left;
   font-size: 24px;
   font-family: "Comfortaa", cursive;
-  text-align: center;
-  /* color: rgb(154, 157, 159); */
   font-weight: bold;
   margin-bottom: 15px;
   margin-left: 8%;
@@ -54,6 +53,7 @@ const BrandInfo = styled.div`
     font-size: 35px;
   }
   @media (min-width: 768px) {
+    text-align: center;
     font-size: 39px;
   }
   @media (min-width: 870px) {
@@ -127,8 +127,6 @@ const Logo = styled.img`
   margin-bottom: 14px;
   display: flex;
   @media (min-width: 768px) {
-    /* margin-left: initial;
-    margin-right: initial; */
   }
 `;
 
