@@ -72,6 +72,42 @@ const ContactInfo = styled.div`
   }
 `;
 
+// const EmailLink = styled.a`
+//   font-family: "Montserrat Alternates";
+//   color: black;
+//   text-shadow: 1px 1px 3px white;
+//   text-decoration: none;
+//   font-weight: bold;
+//   margin: 4px 5%;
+//   font-size: 24px;
+//   @media (min-width: 600px) {
+//     font-size: 30px;
+//   }
+//   &:hover {
+//     color: darkblue;
+//     text-shadow: 4px 4px 5px darkblue;
+//     filter:drop-shadow(1px 1px white);
+//   }
+// `
+
+// const PhoneLink = styled.a`
+//   font-family: "Montserrat Alternates";
+//   color: black;
+//   text-shadow: 1px 1px 1px white;
+//   text-decoration: none;
+//   font-weight: 900;
+//   margin: 4px 5%;
+//   font-size: 24px;
+//   @media (min-width: 600px) {
+//     font-size: 30px;
+//   }
+//   &:hover {
+//     color: darkblue;
+//     text-shadow: 4px 4px 5px darkblue;
+//     filter:drop-shadow(1px 1px white);
+//   }
+// `
+
 const Footer = () => (
   <div
     style={{
