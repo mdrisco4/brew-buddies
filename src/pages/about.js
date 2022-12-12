@@ -69,10 +69,10 @@ const About = () => (
     </MissionStatement>
     <MissionStatement>
       Are you a bar, restaurant or retailer looking to enhance your craft
-      beverage programming? BrewBUddies offers free consultation services
+      beverage programming? BrewBuddies offers free consultation services
       because sometimes a fresh set of eyes can identify hidden opportunities
-      and potential areas for growth. Do you just REALLY like drinking craft
-      beer? BrewBuddies also holds regular events to promote our partners,
+      and potential areas for growth.  Do you just REALLY like drinking craft
+      beer?  BrewBuddies also holds regular events to promote our partners,
       engage with their fans and uplift the craft beverage community as a whole!
     </MissionStatement>
   </div>

@@ -139,7 +139,7 @@ const Brands = () => (
   >
     <BrandHeader>Featured Brands</BrandHeader>
     <BrandInfo>
-      BrewBuddies isn proud to represent the following brands. Click their logos
+      BrewBuddies is proud to represent the following brands. Click their logos
       to learn more about each of our partners!
     </BrandInfo>
     <LogoContainer1>
