@@ -118,8 +118,7 @@ const LogoContainer3 = styled.div`
   }
 `;
 
-const BrandLink = styled.a`
-`;
+const BrandLink = styled.a``;
 
 const Logo = styled.img`
   width: 50%;
@@ -140,8 +139,8 @@ const Brands = () => (
   >
     <BrandHeader>Featured Brands</BrandHeader>
     <BrandInfo>
-      We strive to bring you the best in craft beer with our services. If you
-      would like to get a brand you do not see featured here please inquire.
+      BrewBuddies isn proud to represent the following brands. Click their logos
+      to learn more about each of our partners!
     </BrandInfo>
     <LogoContainer1>
       <BrandLink href="https://sagerbeerworks.com/" target="_blank">

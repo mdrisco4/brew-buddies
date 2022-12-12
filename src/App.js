@@ -78,7 +78,7 @@ const MenuLinksContainer = styled.ul`
   }
   @media (min-width: 575px) {
     height: 325px;
-    width: 50%;
+    width: 40%;
   }
   @media (min-width: 650px) {
     height: 320px;

@@ -6,6 +6,8 @@ const AboutHeader = styled.h1`
   font-family: "Comfortaa", cursive;
   padding-top: 50px;
   text-decoration: underline;
+  padding-left: 5%;
+  padding-right: 5%;
 `;
 
 const MissionStatement = styled.div`
@@ -58,6 +60,20 @@ const About = () => (
       directly to consumers and retailers without the need to partner with a
       traditional distributor, and our goal is to help those companies realize
       the maximum potential from this unique opportunity.
+    </MissionStatement>
+    <AboutHeader>What can BrewBuddies do for you?</AboutHeader>
+    <MissionStatement>
+      Are you a brewery or other craft manufacturer looking towards expanding or
+      developing your business? BrewBuddies offers a wide array of service
+      packages to meet whatever needs your business has, no matter how small.
+    </MissionStatement>
+    <MissionStatement>
+      Are you a bar, restaurant or retailer looking to enhance your craft
+      beverage programming? BrewBUddies offers free consultation services
+      because sometimes a fresh set of eyes can identify hidden opportunities
+      and potential areas for growth. Do you just REALLY like drinking craft
+      beer? BrewBuddies also holds regular events to promote our partners,
+      engage with their fans and uplift the craft beverage community as a whole!
     </MissionStatement>
   </div>
 );
