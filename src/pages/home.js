@@ -22,6 +22,12 @@ const Slides = [
   { url: "http://localhost:3000/Beer5.jpg", title: "Five" }
 ]
 
+const containerStyles = {
+  width: '500px',
+  height: '280px',
+  margin: '0 auto',
+}
+
 const LandingPagePromptOne = styled.div`
   position: absolute;
   top: 42%;
@@ -106,7 +112,9 @@ const Home = () => (
   >
     <LandingPageContainer>
       <LandingPageImage src="https://i.imgur.com/lFmBaFx.jpg" />
-      <ImageSlider slides={Slides} />
+      <div styles={containerStyles}>
+        <ImageSlider slides={Slides} />
+      </div>
       <LandingPagePromptOne></LandingPagePromptOne>
       <LandingPagePromptTwo></LandingPagePromptTwo>
     </LandingPageContainer>
