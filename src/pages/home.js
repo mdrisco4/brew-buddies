@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import ImageSlider from "../components/imageSlider.js"
 
 const LandingPageContainer = styled.div`
   position: relative;
@@ -12,6 +13,14 @@ const LandingPageImage = styled.img`
   margin-bottom: none !important;
   border-top: 30px;
 `;
+
+const Slides = [
+  { url: "http://localhost:3000/Beer1.jpg", title: "One" },
+  { url: "http://localhost:3000/Beer2.jpg", title: "Two" },
+  { url: "http://localhost:3000/Beer3.jpg", title: "Three" },
+  { url: "http://localhost:3000/Beer4.jpg", title: "Four" },
+  { url: "http://localhost:3000/Beer5.jpg", title: "Five" }
+]
 
 const LandingPagePromptOne = styled.div`
   position: absolute;
@@ -97,6 +106,7 @@ const Home = () => (
   >
     <LandingPageContainer>
       <LandingPageImage src="https://i.imgur.com/lFmBaFx.jpg" />
+      <ImageSlider slides={Slides} />
       <LandingPagePromptOne></LandingPagePromptOne>
       <LandingPagePromptTwo></LandingPagePromptTwo>
     </LandingPageContainer>

@@ -56,9 +56,9 @@ const BottomBorder = styled.div`
 `;
 
 const Logo = styled.img`
-  width: 20%;
-  margin-left: 40%;
-  margin-right: 40%;
+  width: 35%;
+  margin-left: 32.5%;
+  margin-right: 32.5%;
   padding-top: 40px;
   @media (min-width: 768px) {
   }
@@ -118,10 +118,10 @@ const Footer = () => (
   >
     <TopBorder />
     <Logo src="https://i.imgur.com/rpLw26n.png" />
-    <ContactInfo>Rob Richenberg</ContactInfo>
+    {/* <ContactInfo>Rob Richenberg</ContactInfo>
     <ContactInfo>Founder/Beer Guru</ContactInfo>
     <ContactInfo>Rob@BrewBuddiesNY.com</ContactInfo>
-    <ContactInfo>(585) 813-4506</ContactInfo>
+    <ContactInfo>(585) 813-4506</ContactInfo> */}
     <BottomBorder />
   </div>
 );
