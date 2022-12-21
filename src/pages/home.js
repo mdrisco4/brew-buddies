@@ -3,6 +3,11 @@ import styled from "styled-components";
 import Slider from "../components/imageSlider";
 // import ImageSlider from "../components/imageSlider.js"
 
+import Beer1 from "../slideshow_images/Beer1.jpeg";
+import Beer2 from "../slideshow_images/Beer2.jpeg";
+import Beer3 from "../slideshow_images/Beer3.jpeg";
+import Beer4 from "../slideshow_images/Beer4.jpeg";
+
 const LandingPageContainer = styled.div`
   position: relative;
   text-align: center;
@@ -16,9 +21,9 @@ const LandingPageImage = styled.img`
 `;
 
 const SliderContainer = styled.div`
-  width: '500px';
-  height: '280px';
-  margin: '0 auto';
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
 `
 
 const LandingPagePromptOne = styled.div`
@@ -110,9 +115,15 @@ const Home = () => (
       <LandingPagePromptOne></LandingPagePromptOne>
       <LandingPagePromptTwo></LandingPagePromptTwo>
     </LandingPageContainer>
-        <SliderContainer>
+
+
+        {/* <SliderContainer> */}
          {/* <Slider></Slider> */}
-        </SliderContainer>
+        {/* </SliderContainer> */}
+
+
+
+        {/* <img src={Beer4} /> */}
   </div>
 );
 
