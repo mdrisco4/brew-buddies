@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import Slider from "../components/imageSlider";
 // import ImageSlider from "../components/imageSlider.js"
 
 const LandingPageContainer = styled.div`
@@ -114,6 +115,7 @@ const Home = () => (
       <LandingPageImage src="https://i.imgur.com/lFmBaFx.jpg" />
       <div styles={containerStyles}>
         {/* <ImageSlider slides={Slides} /> */}
+        {/* <Slider></Slider> */}
       </div>
       <LandingPagePromptOne></LandingPagePromptOne>
       <LandingPagePromptTwo></LandingPagePromptTwo>

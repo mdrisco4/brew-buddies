@@ -1,12 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import "./Slider.css";
-import styled from "styled-components";
+import "./imageSlider.css";
+// import styled from "styled-components";
 
-import Beer1 from "../slideshow_images/Beer1.png";
-import Beer2 from "../slideshow_images/Beer2.png";
-import Beer3 from "../slideshow_images/Beer3.png";
-import Beer4 from "../slideshow_images/Beer4.png";
+import Beer1 from "../slideshow_images/Beer1.jpeg";
+import Beer2 from "../slideshow_images/Beer2.jpeg";
+import Beer3 from "../slideshow_images/Beer3.jpeg";
+import Beer4 from "../slideshow_images/Beer4.jpeg";
 
 const slideData = [
   {
@@ -36,7 +36,7 @@ const slideData = [
 ];
 
 const Slide = ({ property }) => {
-  const { title, imga, imgb, labela, labelb, index } = property;
+  const { title, img, label, index } = property;
   return (
     <div id={`slide-${index}`} className="slide">
       <div className="slide-container">
