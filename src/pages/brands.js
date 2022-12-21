@@ -152,7 +152,7 @@ const Brands = () => (
     </LogoContainer1>
     <LogoContainer2>
       <BrandLink href="https://www.lillybellemeads.com/" target="_blank">
-        <Logo src="https://i.imgur.com/NUr7F8O.png" />
+        <Logo src="https://i.imgur.com/iiePk9U.png" />
       </BrandLink>
       <BrandLink href="https://www.butternutsbeerandale.com/" target="_blank">
         <Logo src="https://i.imgur.com/Vv4AcHe.png" />
@@ -163,7 +163,7 @@ const Brands = () => (
     </LogoContainer2>
     <LogoContainer3>
       <BrandLink href="https://elifishbrewing.com/" target="blank">
-        <Logo src="https://i.imgur.com/Xns4WcX.png" />
+        <Logo src="https://i.imgur.com/vp9vYAt.png" />
       </BrandLink>
       <BrandLink href="https://www.westshorebrewing.com/" target="_blank">
         <Logo src="https://i.imgur.com/hkFOFfi.png" />

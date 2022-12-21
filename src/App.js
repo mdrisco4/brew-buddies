@@ -77,29 +77,29 @@ const MenuLinksContainer = styled.ul`
     height: 320px;
   }
   @media (min-width: 575px) {
-    height: 325px;
-    width: 40%;
+    height: 240px;
+    width: 20%;
   }
   @media (min-width: 650px) {
-    height: 320px;
+    height: 260px;
   }
   @media (min-width: 768px) {
-    height: 340px;
+    height: 294px;
   }
   @media (min-width: 850px) {
-    height: 360px;
+    height: 320px;
   }
   @media (min-width: 980px) {
-    height: 396px;
+    height: 348px;
   }
   @media (min-width: 1150px) {
-    height: 420px;
+    /* height: 420px; */
   }
   @media (min-width: 1280px) {
-    height: 450px;
+    /* height: 450px; */
   }
   @media (min-width: 1280px) {
-    height: 450px;
+    /* height: 450px; */
   }
 `;
 
@@ -110,16 +110,16 @@ const MenuLinks = styled.li`
   font-weight: bold;
   text-decoration: none;
   @media (min-width: 575px) {
-    font-size: 42px;
+    font-size: 27px;
   }
   @media (min-width: 768px) {
-    font-size: 45px;
+    font-size: 32px;
   }
   @media (min-width: 850px) {
-    font-size: 50px;
+    font-size: 36px;
   }
   @media (min-width: 980px) {
-    font-size: 54px;
+    font-size: 39px;
   }
   @media (min-width: 1150px) {
     /* font-size: 42px; */ /*May re-add this styling*/
