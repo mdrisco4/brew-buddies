@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import ImageSlider from "../components/imageSlider.js"
+// import ImageSlider from "../components/imageSlider.js"
 
 const LandingPageContainer = styled.div`
   position: relative;
@@ -113,7 +113,7 @@ const Home = () => (
     <LandingPageContainer>
       <LandingPageImage src="https://i.imgur.com/lFmBaFx.jpg" />
       <div styles={containerStyles}>
-        <ImageSlider slides={Slides} />
+        {/* <ImageSlider slides={Slides} /> */}
       </div>
       <LandingPagePromptOne></LandingPagePromptOne>
       <LandingPagePromptTwo></LandingPagePromptTwo>
