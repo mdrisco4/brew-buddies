@@ -2,12 +2,40 @@ import React from "react";
 import styled from "styled-components";
 import "../styles/fonts.css";
 
-const AboutHeader = styled.h1`
+const AboutHeader = styled.div`
   font-family: "Comfortaa", cursive;
   padding-top: 50px;
   text-decoration: underline;
   padding-left: 5%;
   padding-right: 5%;
+  font-size: 30px;
+  @media (min-width: 550px) {
+    font-size: 18px;
+    margin-left: 9%;
+    margin-right: 9%;
+    font-size: 35px;
+  }
+  @media (min-width: 640px) {
+    font-size: 22px;
+    margin-left: 11%;
+    margin-right: 11%;
+    font-size: 40px;
+  }
+  @media (min-width: 768px) {
+    margin-left: 4%;
+    margin-right: 4%;
+    font-size: 45px;
+  }
+  @media (min-width: 950px) {
+    margin-left: 9%;
+    margin-right: 9%;
+    font-size: 49px;
+  }
+  @media (min-width: 1150px) {
+    margin-left: 15%;
+    margin-right: 15%;
+    font-size: 54px;
+  }
 `;
 
 const MissionStatement = styled.div`

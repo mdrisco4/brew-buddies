@@ -15,19 +15,11 @@ const LandingPageImage = styled.img`
   border-top: 30px;
 `;
 
-const Slides = [
-  { url: "http://localhost:3000/Beer1.jpg", title: "One" },
-  { url: "http://localhost:3000/Beer2.jpg", title: "Two" },
-  { url: "http://localhost:3000/Beer3.jpg", title: "Three" },
-  { url: "http://localhost:3000/Beer4.jpg", title: "Four" },
-  { url: "http://localhost:3000/Beer5.jpg", title: "Five" }
-]
-
-const containerStyles = {
-  width: '500px',
-  height: '280px',
-  margin: '0 auto',
-}
+const SliderContainer = styled.div`
+  width: '500px';
+  height: '280px';
+  margin: '0 auto';
+`
 
 const LandingPagePromptOne = styled.div`
   position: absolute;
@@ -113,13 +105,14 @@ const Home = () => (
   >
     <LandingPageContainer>
       <LandingPageImage src="https://i.imgur.com/lFmBaFx.jpg" />
-      <div styles={containerStyles}>
-        {/* <ImageSlider slides={Slides} /> */}
-        {/* <Slider></Slider> */}
-      </div>
+
+
       <LandingPagePromptOne></LandingPagePromptOne>
       <LandingPagePromptTwo></LandingPagePromptTwo>
     </LandingPageContainer>
+        <SliderContainer>
+         {/* <Slider></Slider> */}
+        </SliderContainer>
   </div>
 );
 

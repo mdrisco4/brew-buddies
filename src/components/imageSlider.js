@@ -10,27 +10,27 @@ import Beer4 from "../slideshow_images/Beer4.jpeg";
 
 const slideData = [
   {
-    title: "Fall 2020 Collection",
+    title: "Image One",
     img: Beer1,
-    label: "LUCA",    
+    label: "One",    
     index: 0
   },
   {
-    title: "Fall 2020 Collection",
+    title: "Iwage Two",
     img: Beer2,
-    label: "AlWAYS",
+    label: "Two",
     index: 1
   },
   {
-    title: "Fall 2020 Collection",
+    title: "Image Three",
     img: Beer3,
-    label: "ALICE",
+    label: "Three",
     index: 2
   },
   {
-    title: "Fall 2020 Collection",
+    title: "Image Four",
     img: Beer4,
-    label: "AINSLEY",
+    label: "Four",
     index: 3
   },
 ];
