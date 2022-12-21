@@ -144,7 +144,7 @@ const Brands = () => (
     </BrandInfo>
     <LogoContainer1>
       <BrandLink href="https://sagerbeerworks.com/" target="_blank">
-        <Logo src="https://i.imgur.com/mUt147R.jpg" />
+        <Logo src="https://i.imgur.com/D2PxpfJ.png" />
       </BrandLink>
       <BrandLink href="http://rustynickelbrewing.com/" target="_blank">
         <Logo src="https://i.imgur.com/PUEJmsR.jpg" />
@@ -166,7 +166,7 @@ const Brands = () => (
         <Logo src="https://i.imgur.com/Xns4WcX.png" />
       </BrandLink>
       <BrandLink href="https://www.westshorebrewing.com/" target="_blank">
-        <Logo src="https://i.imgur.com/9JdZvY0.png" />
+        <Logo src="https://i.imgur.com/hkFOFfi.png" />
       </BrandLink>
     </LogoContainer3>
   </div>
