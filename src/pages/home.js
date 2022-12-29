@@ -17,22 +17,22 @@ const slideData = [
   },
   {
     title: "Iwage Two",
-    img: Beer2,
+    img: Beer3,
     label: "Two",
     index: 1
   },
   {
     title: "Image Three",
-    img: Beer3,
+    img: Beer4,
     label: "Three",
     index: 2
   },
-  {
-    title: "Image Four",
-    img: Beer4,
-    label: "Four",
-    index: 3
-  },
+  // {
+  //   title: "Image Four",
+  //   img: Beer2,
+  //   label: "Four",
+  //   index: 3
+  // },
 ];
 
 
@@ -49,8 +49,8 @@ const LandingPageImage = styled.img`
 `;
 
 const SliderContainer = styled.div`
-  width: 500px;
-  height: 500px;
+  /* width: 500px; */
+  /* height: 500px; */
   margin: 0 auto;
 `
 
@@ -137,26 +137,23 @@ const Home = () => (
       maxWidth: "1500px",
       marginLeft: "10%",
       marginRight: "10%",
-      backgroundColor: "rgb(74, 73, 72)",
+      // backgroundColor: "rgb(135, 180, 225)",
+      backgroundColor: "red",
+      // height: "500px"
     }}
-  >
-    <LandingPageContainer>
-      <LandingPageImage src="https://i.imgur.com/lFmBaFx.jpg" />
-
-
-      <LandingPagePromptOne></LandingPagePromptOne>
-      <LandingPagePromptTwo></LandingPagePromptTwo>
-    </LandingPageContainer>
-
-
-        <SliderContainer>
-          {/* <Pic src={Beer1} /> */}
-         <Slider slideData={slideData} />
-        </SliderContainer>
+    >
+    {/* <SliderContainer> */}
+     <Slider slideData={slideData} />
+    {/* </SliderContainer> */}
 
 
 
+    {/* <LandingPageContainer> */}
+        {/* <LandingPageImage src="https://i.imgur.com/lFmBaFx.jpg" /> */}
         {/* <img src={Beer4} /> */}
+    {/* </LandingPageContainer> */}
+
+
   </div>
 );
 

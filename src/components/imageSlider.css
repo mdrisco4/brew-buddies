@@ -11,8 +11,10 @@
   }
 */  
   .card {
+    padding-left: 15%;
+    padding-right: 15%;
     display: flex;
-    width: 500px;
+    width: 100%;
   }
  /* 
   .slide-container {
@@ -32,7 +34,8 @@
   */
   .slide-img {
     /* height: 210px; */
-    width: 500px;
+    width: 680px;
+    width: 100%;
     margin: 3px;
     margin-bottom: 0;
   }

@@ -1,48 +1,64 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import "./imageSlider.css";
-// import styled from "styled-components";
+import styled from "styled-components";
 
-import Beer1 from "../slideshow_images/Beer1.jpeg";
-import Beer2 from "../slideshow_images/Beer2.jpeg";
-import Beer3 from "../slideshow_images/Beer3.jpeg";
-import Beer4 from "../slideshow_images/Beer4.jpeg";
+// import Beer1 from "../slideshow_images/Beer1.jpeg";
+// import Beer2 from "../slideshow_images/Beer2.jpeg";
+// import Beer3 from "../slideshow_images/Beer3.jpeg";
+// import Beer4 from "../slideshow_images/Beer4.jpeg";
 
-const slideData = [
-  {
-    title: "Image One",
-    img: Beer1,
-    label: "One",    
-    index: 0
-  },
-  {
-    title: "Iwage Two",
-    img: Beer2,
-    label: "Two",
-    index: 1
-  },
-  {
-    title: "Image Three",
-    img: Beer3,
-    label: "Three",
-    index: 2
-  },
-  {
-    title: "Image Four",
-    img: Beer4,
-    label: "Four",
-    index: 3
-  },
-];
+// const slideData = [
+//   {
+//     title: "Image One",
+//     img: Beer1,
+//     label: "One",    
+//     index: 0
+//   },
+//   {
+//     title: "Iwage Two",
+//     img: Beer2,
+//     label: "Two",
+//     index: 1
+//   },
+//   {
+//     title: "Image Three",
+//     img: Beer3,
+//     label: "Three",
+//     index: 2
+//   },
+//   {
+//     title: "Image Four",
+//     img: Beer4,
+//     label: "Four",
+//     index: 3
+//   },
+// ];
+
+const slide = styled.div`
+
+`
+
+const SlideContainer = styled.div`
+
+`
+
+const ImageContainer = styled.div`
+
+`
+
+const SlideImage = styled.img`
+
+`
+
 
 const Slide = ({ property }) => {
-  const { title, img, label, index } = property;
+  const { img, index } = property;
   return (
     <div id={`slide-${index}`} className="slide">
       <div className="slide-container">
         <div className="image">
           <img src={img} className="slide-img" />
-          {/* <p className="slide-text">{`${label}`}</p> */}
         </div>
       </div>
     </div>
