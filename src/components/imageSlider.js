@@ -40,7 +40,7 @@ const Slide = ({ property }) => {
   return (
     <div id={`slide-${index}`} className="slide">
       <div className="slide-container">
-        <div className="image-1">
+        <div className="image">
           <img src={img} className="slide-img" />
           <p className="slide-text">{`${label}`}</p>
         </div>
@@ -65,6 +65,12 @@ class Slider extends React.Component {
         property: this.props.slideData[newIndex]
       });
     }
+    if (this.state.property.index == 0) {
+        const newIndex = this.props.slideData.length - 1;
+        this.setState({
+          property: this.props.slideData[newIndex]
+        });
+      }
   };
 
   nextProperty = () => {
@@ -74,6 +80,12 @@ class Slider extends React.Component {
         property: this.props.slideData[newIndex]
       });
     }
+    if (this.state.property.index == this.props.slideData.length - 1) {
+        const newIndex = 0;
+        this.setState({
+          property: this.props.slideData[newIndex]
+        });
+      }
   };
 
   render() {
