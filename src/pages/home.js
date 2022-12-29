@@ -117,9 +117,10 @@ const Home = () => (
     </LandingPageContainer>
 
 
-        {/* <SliderContainer> */}
+        <SliderContainer>
+          the
          {/* <Slider></Slider> */}
-        {/* </SliderContainer> */}
+        </SliderContainer>
 
 
 
