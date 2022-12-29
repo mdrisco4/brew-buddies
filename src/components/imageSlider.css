@@ -9,11 +9,12 @@
     text-align: left;
     font-weight: bold;
   }
-  
+*/  
   .card {
     display: flex;
+    width: 500px;
   }
-  
+ /* 
   .slide-container {
     display: flex;
     flex-direction: row;
@@ -28,14 +29,14 @@
     font-size: 20px;
     height: 276px;
   }
-  
+  */
   .slide-img {
-    height: 210px;
-    width: 132px;
+    /* height: 210px; */
+    width: 500px;
     margin: 3px;
     margin-bottom: 0;
   }
-  
+  /*
   .slide-text {
     text-align: center;
     margin: 0;

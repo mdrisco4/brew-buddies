@@ -8,6 +8,34 @@ import Beer2 from "../slideshow_images/Beer2.jpeg";
 import Beer3 from "../slideshow_images/Beer3.jpeg";
 import Beer4 from "../slideshow_images/Beer4.jpeg";
 
+const slideData = [
+  {
+    title: "Image One",
+    img: Beer1,
+    label: "One",    
+    index: 0
+  },
+  {
+    title: "Iwage Two",
+    img: Beer2,
+    label: "Two",
+    index: 1
+  },
+  {
+    title: "Image Three",
+    img: Beer3,
+    label: "Three",
+    index: 2
+  },
+  {
+    title: "Image Four",
+    img: Beer4,
+    label: "Four",
+    index: 3
+  },
+];
+
+
 const LandingPageContainer = styled.div`
   position: relative;
   text-align: center;
@@ -99,6 +127,10 @@ const LandingPagePromptTwo = styled.div`
   }
 `;
 
+const Pic = styled.img`
+  width: 400px;
+`
+
 const Home = () => (
   <div
     style={{
@@ -118,8 +150,8 @@ const Home = () => (
 
 
         <SliderContainer>
-          the
-         {/* <Slider></Slider> */}
+          {/* <Pic src={Beer1} /> */}
+         <Slider slideData={slideData} />
         </SliderContainer>
 
 

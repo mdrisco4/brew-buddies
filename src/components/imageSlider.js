@@ -42,7 +42,7 @@ const Slide = ({ property }) => {
       <div className="slide-container">
         <div className="image">
           <img src={img} className="slide-img" />
-          <p className="slide-text">{`${label}`}</p>
+          {/* <p className="slide-text">{`${label}`}</p> */}
         </div>
       </div>
     </div>
