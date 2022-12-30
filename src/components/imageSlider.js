@@ -78,14 +78,17 @@ class Slider extends React.Component {
   };
 
   AutoScroll = () => {
-    setInterval(this.nextProperty, 3000); 
-  }
+      setInterval(this.nextProperty, 3000); 
+    }
 
-  NewFunction = () => {
-    useEffect(
-      console.log("hello")
-    )
-  }
+  
+  // AutoScroll = () => {
+  //   useEffect(() => {
+  //     setInterval(this.nextProperty, 3000); 
+  //   })
+  // };
+
+  
 
   render() {
     const { properties, property } = this.state;
