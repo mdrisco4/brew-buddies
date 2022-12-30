@@ -137,8 +137,8 @@ const Home = () => (
       maxWidth: "1500px",
       marginLeft: "10%",
       marginRight: "10%",
-      // backgroundColor: "rgb(135, 180, 225)",
-      backgroundColor: "red",
+      backgroundColor: "rgb(135, 180, 225)",
+      // backgroundColor: "red",
       // height: "500px"
     }}
     >
