@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
-import "./imageSlider.css";
+import "../styles/imageSlider.css";
 import styled from "styled-components";
 
 
