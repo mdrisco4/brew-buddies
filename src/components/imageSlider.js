@@ -51,6 +51,7 @@ const SlideImage = styled.img`
 
 `
 
+// setInterval(nextProperty, 3000)
 
 const Slide = ({ property }) => {
   const { img, index } = property;
@@ -80,12 +81,14 @@ class Slider extends React.Component {
       this.setState({
         property: this.props.slideData[newIndex]
       });
+      console.log(this.state.property.index)
     }
     if (this.state.property.index == 0) {
         const newIndex = this.props.slideData.length - 1;
         this.setState({
           property: this.props.slideData[newIndex]
         });
+        console.log(this.state.property.index)
       }
   };
 
@@ -95,14 +98,41 @@ class Slider extends React.Component {
       this.setState({
         property: this.props.slideData[newIndex]
       });
+      console.log(this.state.property.index)
     }
     if (this.state.property.index == this.props.slideData.length - 1) {
         const newIndex = 0;
         this.setState({
           property: this.props.slideData[newIndex]
         });
+        console.log(this.state.property.index)
       }
   };
+
+  AutoScroll = () => {
+    setInterval(this.nextProperty, 3000); 
+    // {
+
+        // console.log(this.state.property.index)
+
+    //     if (this.state.property.index >= 0) {
+    //         const newIndex = this.state.property.index + 1;
+    //         this.setState({
+    //           property: this.props.slideData[newIndex]
+    //         });
+    //         console.log(this.state.property.index)
+    //       }
+    //       if (this.state.property.index == this.props.slideData.length - 1) {
+    //           const newIndex = 0;
+    //           this.setState({
+    //             property: this.props.slideData[newIndex]
+    //           });
+    //           console.log(this.state.property.index)
+    //         }
+    //         console.log(this.state.property.index)
+    // }
+    // , 3000)
+  }
 
   render() {
     const { properties, property } = this.state;
@@ -115,7 +145,7 @@ class Slider extends React.Component {
           <div className="slide">
             <Slide property={property} />
           </div>
-          <button className="button" onClick={() => this.nextProperty()}>
+          <button className="button" onClick={() => this.AutoScroll()}>
             <p className='button-icon'>&#10095;</p>
           </button>
         </div>
