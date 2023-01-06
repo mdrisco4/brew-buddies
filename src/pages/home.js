@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import Slider from "../components/imageSlider";
 // import ImageSlider from "../components/imageSlider.js"
@@ -132,6 +132,11 @@ const Pic = styled.img`
 `
 
 const Home = () => (
+
+  // useEffect(() => {
+  //   AutoScroll();
+  // }, [])
+
   <div
     style={{
       // maxWidth: "1500px",

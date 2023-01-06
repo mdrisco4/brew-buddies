@@ -4,16 +4,16 @@ import "../styles/fonts.css";
 
 const TopBorder = styled.div`
   background-color: rgb(135, 180, 225);
-  height: 30px;
+  height: 200px;
   font-size: 1px;
   @media (min-width: 540px) {
-    height: 35px;
+    height: 210px;
   }
   @media (min-width: 650px) {
-    height: 42px;
+    height: 156px;
   }
   @media (min-width: 768px) {
-    height: 45px;
+    height: 81px;
   }
   @media (min-width: 840px) {
     height: 50px;
