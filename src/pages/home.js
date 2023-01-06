@@ -134,17 +134,17 @@ const Pic = styled.img`
 const Home = () => (
   <div
     style={{
-      maxWidth: "1500px",
-      marginLeft: "10%",
-      marginRight: "10%",
+      // maxWidth: "1500px",
+      // marginLeft: "10%",
+      // marginRight: "10%",
       backgroundColor: "rgb(135, 180, 225)",
       // backgroundColor: "red",
       // height: "500px"
     }}
     >
-    {/* <SliderContainer> */}
+    <SliderContainer>
      <Slider slideData={slideData} />
-    {/* </SliderContainer> */}
+    </SliderContainer>
 
 
 

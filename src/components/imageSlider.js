@@ -92,6 +92,9 @@ class Slider extends React.Component {
 
   render() {
     const { properties, property } = this.state;
+    // useEffect(() => {
+    //   this.AutoScroll();
+    // });
     return (
       <div>
         <div className="card">
