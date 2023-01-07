@@ -62,7 +62,13 @@ class Slider extends React.Component {
   };
 
   AutoScroll = () => {
+    //  var stopFiring = false
+    //  console.log(stopFiring);
+    //   if (stopFiring = false) {
       setInterval(this.nextProperty, 3000); 
+    //   stopFiring = true;
+    //   console.log(stopFiring);
+    // }
     }
 
 
@@ -70,21 +76,36 @@ class Slider extends React.Component {
     const { properties, property } = this.state;
 
     const slideShow = () => {
+
+      var stopFiring = false
+     console.log(stopFiring);
+      if (stopFiring = false) {
+
+      // if (localStorage.getItem("hasCodeRunBefore") === null) {
       this.AutoScroll()
+
+      stopFiring = true;
+      console.log(stopFiring);
+    }
+
+      // localStorage.setItem("hasCodeRunBefore", true);
+    // }
     }
 
     return (
       <div>
-        <div className="card" onLoad={slideShow}>
+        <div className="card" 
+        onLoad={slideShow}
+        >
           {/* <button className="button" onClick={() => this.prevProperty()}>
           <p className='button-icon'>&#10094;</p>
           </button> */}
           <div className="slide">
             <Slide property={property} />
           </div>
-          {/* <button className="button" onClick={() => this.AutoScroll()}>
+          <button className="button" onClick={() => this.AutoScroll()}>
             <p className='button-icon'>&#10095;</p>
-          </button> */}
+          </button>
         </div>
       </div>
     );
