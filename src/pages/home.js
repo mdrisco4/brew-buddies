@@ -133,32 +133,14 @@ const Pic = styled.img`
 
 const Home = () => (
 
-  // useEffect(() => {
-  //   AutoScroll();
-  // }, [])
-
   <div
     style={{
-      // maxWidth: "1500px",
-      // marginLeft: "10%",
-      // marginRight: "10%",
       backgroundColor: "rgb(135, 180, 225)",
-      // backgroundColor: "red",
-      // height: "500px"
     }}
     >
     <SliderContainer>
      <Slider slideData={slideData} />
     </SliderContainer>
-
-
-
-    {/* <LandingPageContainer> */}
-        {/* <LandingPageImage src="https://i.imgur.com/lFmBaFx.jpg" /> */}
-        {/* <img src={Beer4} /> */}
-    {/* </LandingPageContainer> */}
-
-
   </div>
 );
 

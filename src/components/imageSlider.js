@@ -4,22 +4,6 @@ import "../styles/imageSlider.css";
 import styled from "styled-components";
 
 
-const slide = styled.div`
-
-`
-
-const SlideContainer = styled.div`
-
-`
-
-const ImageContainer = styled.div`
-
-`
-
-const SlideImage = styled.img`
-
-`
-
 
 const Slide = ({ property }) => {
   const { img, index } = property;
@@ -81,32 +65,26 @@ class Slider extends React.Component {
       setInterval(this.nextProperty, 3000); 
     }
 
-  
-  // AutoScroll = () => {
-  //   useEffect(() => {
-  //     setInterval(this.nextProperty, 3000); 
-  //   })
-  // };
-
-  
 
   render() {
     const { properties, property } = this.state;
-    // useEffect(() => {
-    //   this.AutoScroll();
-    // });
+
+    const slideShow = () => {
+      this.AutoScroll()
+    }
+
     return (
       <div>
-        <div className="card">
-          <button className="button" onClick={() => this.prevProperty()}>
+        <div className="card" onLoad={slideShow}>
+          {/* <button className="button" onClick={() => this.prevProperty()}>
           <p className='button-icon'>&#10094;</p>
-          </button>
+          </button> */}
           <div className="slide">
             <Slide property={property} />
           </div>
-          <button className="button" onClick={() => this.AutoScroll()}>
+          {/* <button className="button" onClick={() => this.AutoScroll()}>
             <p className='button-icon'>&#10095;</p>
-          </button>
+          </button> */}
         </div>
       </div>
     );
