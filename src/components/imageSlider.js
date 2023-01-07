@@ -45,7 +45,8 @@ class Slider extends React.Component {
   };
 
   nextProperty = () => {
-    if (this.state.property.index >= 0) {
+    // if (this.state.property.index >= 0) {
+      if (this.state.property.index < this.props.slideData.length - 1) {
       const newIndex = this.state.property.index + 1;
       this.setState({
         property: this.props.slideData[newIndex]
@@ -82,12 +83,15 @@ class Slider extends React.Component {
       if (stopFiring = false) {
 
       // if (localStorage.getItem("hasCodeRunBefore") === null) {
-      this.AutoScroll()
+
+      // setInterval(this.nextProperty, 3000); 
+      this.AutoScroll();
 
       stopFiring = true;
       console.log(stopFiring);
     }
-
+      else(console.log("stopped"))
+      
       // localStorage.setItem("hasCodeRunBefore", true);
     // }
     }
