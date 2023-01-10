@@ -157,6 +157,14 @@ const Logo = styled.img`
 export default function App() {
   const [open, setOpen] = useState(false);
 
+  // function refreshPage() {
+  //   window.location.reload(true);
+  // }
+
+  function refreshPage() {
+    window.location.load("https://aesthetic-platypus-80f132.netlify.app/");
+  }
+
   return (
     <div>
       <StyledBurger open={open} onClick={() => setOpen(!open)}>
@@ -167,16 +175,18 @@ export default function App() {
       <Router>
         <LogoFLexBox>
           <LogoBorders />
-          <Link to="/">
+          <Link to="/" onClick={refreshPage}>
             <Logo src="https://i.imgur.com/rpLw26n.png" />
           </Link>
           <LogoBorders />
         </LogoFLexBox>
         <HeaderContainer>
-          
+
           <MenuLinksContainer open={open}>
             <MenuLinks open={open} onClick={() => setOpen(!open)}>
-              <Link to="/" style={{ textDecoration: "none", color: "black" }}>
+              <Link to="/"
+              onClick={refreshPage}
+               style={{ textDecoration: "none", color: "black" }}>
                 Home
               </Link>
             </MenuLinks>
