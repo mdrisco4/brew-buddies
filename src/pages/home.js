@@ -133,6 +133,12 @@ const Pic = styled.img`
 
 const Home = () => (
 
+  // useEffect(() => {
+  //   console.log("HELLO");
+  // }, []
+  // );
+
+
   <div
     style={{
       backgroundColor: "rgb(135, 180, 225)",

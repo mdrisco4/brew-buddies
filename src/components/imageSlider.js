@@ -3,8 +3,6 @@ import ReactDOM from "react-dom";
 import "../styles/imageSlider.css";
 import styled from "styled-components";
 
-
-
 const Slide = ({ property }) => {
   const { img, index } = property;
   return (
@@ -23,7 +21,8 @@ class Slider extends React.Component {
     super(props);
     this.state = {
       properties: this.props.slideData,
-      property: this.props.slideData[0]
+      property: this.props.slideData[0],
+      stopFiring: false,
     };
   }
 
@@ -31,84 +30,75 @@ class Slider extends React.Component {
     if (this.state.property.index > 0) {
       const newIndex = this.state.property.index - 1;
       this.setState({
-        property: this.props.slideData[newIndex]
+        property: this.props.slideData[newIndex],
       });
-      console.log(this.state.property.index)
+      console.log(this.state.property.index);
     }
     if (this.state.property.index == 0) {
-        const newIndex = this.props.slideData.length - 1;
-        this.setState({
-          property: this.props.slideData[newIndex]
-        });
-        console.log(this.state.property.index)
-      }
+      const newIndex = this.props.slideData.length - 1;
+      this.setState({
+        property: this.props.slideData[newIndex],
+      });
+      console.log(this.state.property.index);
+    }
   };
 
   nextProperty = () => {
     // if (this.state.property.index >= 0) {
-      if (this.state.property.index < this.props.slideData.length - 1) {
+    if (this.state.property.index < this.props.slideData.length - 1) {
       const newIndex = this.state.property.index + 1;
       this.setState({
-        property: this.props.slideData[newIndex]
+        property: this.props.slideData[newIndex],
       });
-      console.log(this.state.property.index)
+      console.log(this.state.property.index);
     }
     if (this.state.property.index == this.props.slideData.length - 1) {
-        const newIndex = 0;
-        this.setState({
-          property: this.props.slideData[newIndex]
-        });
-        console.log(this.state.property.index)
-      }
+      const newIndex = 0;
+      this.setState({
+        property: this.props.slideData[newIndex],
+      });
+      console.log(this.state.property.index);
+    }
   };
 
   AutoScroll = () => {
     //  var stopFiring = false
     //  console.log(stopFiring);
     //   if (stopFiring = false) {
-      setInterval(this.nextProperty, 3000); 
+    setInterval(this.nextProperty, 3000);
     //   stopFiring = true;
     //   console.log(stopFiring);
     // }
-    }
-
+  };
 
   render() {
-    const { properties, property } = this.state;
+    const { stopFiring, property } = this.state;
 
     const slideShow = () => {
-
-      var stopFiring = false
-     console.log(stopFiring);
-      if (stopFiring = false) {
-
-      // if (localStorage.getItem("hasCodeRunBefore") === null) {
-
-      // setInterval(this.nextProperty, 3000); 
       this.AutoScroll();
+      console.log("fired")
+    };
 
-      stopFiring = true;
-      console.log(stopFiring);
-    }
-      else(console.log("stopped"))
-      
-      // localStorage.setItem("hasCodeRunBefore", true);
-    // }
-    }
+    window.onload=function() {
+      slideShow()
+    };
 
     return (
       <div>
-        <div className="card" 
-        onLoad={slideShow}
+        <div
+          className="card"
         >
           {/* <button className="button" onClick={() => this.prevProperty()}>
           <p className='button-icon'>&#10094;</p>
           </button> */}
-          <div className="slide">
+          <div
+            className="slide"
+            // onLoad={slideShow}
+          >
             <Slide property={property} />
           </div>
           <button className="button" onClick={() => this.AutoScroll()}>
-            <p className='button-icon'>&#10095;</p>
+            <p className="button-icon">&#10095;</p>
           </button>
         </div>
       </div>
