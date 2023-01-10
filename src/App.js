@@ -173,6 +173,7 @@ export default function App() {
           <LogoBorders />
         </LogoFLexBox>
         <HeaderContainer>
+          
           <MenuLinksContainer open={open}>
             <MenuLinks open={open} onClick={() => setOpen(!open)}>
               <Link to="/" style={{ textDecoration: "none", color: "black" }}>

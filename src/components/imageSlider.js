@@ -50,25 +50,19 @@ class Slider extends React.Component {
       this.setState({
         property: this.props.slideData[newIndex],
       });
-      console.log(this.state.property.index);
+      // console.log(this.state.property.index);
     }
     if (this.state.property.index == this.props.slideData.length - 1) {
       const newIndex = 0;
       this.setState({
         property: this.props.slideData[newIndex],
       });
-      console.log(this.state.property.index);
+      // console.log(this.state.property.index);
     }
   };
 
   AutoScroll = () => {
-    //  var stopFiring = false
-    //  console.log(stopFiring);
-    //   if (stopFiring = false) {
     setInterval(this.nextProperty, 3000);
-    //   stopFiring = true;
-    //   console.log(stopFiring);
-    // }
   };
 
   render() {
@@ -76,30 +70,25 @@ class Slider extends React.Component {
 
     const slideShow = () => {
       this.AutoScroll();
-      console.log("fired")
+      // console.log("fired");
     };
 
-    window.onload=function() {
-      slideShow()
+    window.onload = function () {
+      slideShow();
     };
 
     return (
       <div>
-        <div
-          className="card"
-        >
+        <div className="card">
           {/* <button className="button" onClick={() => this.prevProperty()}>
           <p className='button-icon'>&#10094;</p>
           </button> */}
-          <div
-            className="slide"
-            // onLoad={slideShow}
-          >
+          <div className="slide">
             <Slide property={property} />
           </div>
-          <button className="button" onClick={() => this.AutoScroll()}>
+          {/* <button className="button" onClick={() => this.AutoScroll()}>
             <p className="button-icon">&#10095;</p>
-          </button>
+          </button> */}
         </div>
       </div>
     );
