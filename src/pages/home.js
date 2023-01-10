@@ -131,6 +131,12 @@ const Pic = styled.img`
   width: 400px;
 `
 
+const Circle = styled.div`
+width: 50px;
+height: 50px;
+background-color: red;
+`
+
 const Home = () => (
 
   <div
@@ -141,6 +147,7 @@ const Home = () => (
     <SliderContainer>
      <Slider slideData={slideData} />
     </SliderContainer>
+    {/* <Circle></Circle> */}
   </div>
 );
 

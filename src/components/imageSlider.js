@@ -3,6 +3,25 @@ import ReactDOM from "react-dom";
 import "../styles/imageSlider.css";
 import styled from "styled-components";
 
+
+const CircleContainer = styled.div`
+display: flex;
+justify-content: center;
+`
+
+const Dot = styled.div`
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  display: block;
+  color: black;
+  background-color: green;
+  border: 4px solid black;
+  margin: 0 5px 0;
+`
+
+
+
 const Slide = ({ property }) => {
   const { img, index } = property;
   return (
@@ -24,6 +43,7 @@ class Slider extends React.Component {
       property: this.props.slideData[0],
       stopFiring: false,
     };
+    // this.SlideOne = this.Slide.bind(this);
   }
 
   prevProperty = () => {
@@ -65,6 +85,24 @@ class Slider extends React.Component {
     setInterval(this.nextProperty, 3000);
   };
 
+  SlideOne = () => {
+    this.setState({
+      property: 0,
+    });
+    // this.state.property.index = 0
+    console.log("slide 1")
+  }
+
+  SlideTwo = () => {
+    this.state.props.slideData = 1
+    console.log("slide 2")
+  }
+
+  SlideThree = () => {
+    this.state.props.slideData = 2
+    console.log("slide 3")
+  }
+
   render() {
     const { stopFiring, property } = this.state;
 
@@ -90,6 +128,11 @@ class Slider extends React.Component {
             <p className="button-icon">&#10095;</p>
           </button> */}
         </div>
+        {/* <CircleContainer>
+          <Dot onClick={this.SlideOne}/>
+          <Dot onClick={this.SlideTwo}/>
+          <Dot onClick={this.SlideThree}/>
+        </CircleContainer> */}
       </div>
     );
   }
