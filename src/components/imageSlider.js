@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import ReactDOM from "react-dom";
 import "../styles/imageSlider.css";
 import styled from "styled-components";
+import { slide } from "react-burger-menu";
 
 
 const CircleContainer = styled.div`
@@ -113,7 +114,23 @@ class Slider extends React.Component {
 
     window.onload = function () {
       slideShow();
+      console.log("loaded")
     };
+
+    // window.$(document).ready = function () {
+    //   slideShow();
+    //   console.log("loaded")
+    // }
+
+    // window.addEventListener = function () {
+    //   slideShow()
+    //   // , {once : true};
+    //   console.log("loaded")
+    // };   
+
+    // window.addEventListener("load", slideShow, false);
+    //   console.log("loaded")
+    // };   
 
     return (
       <div>
