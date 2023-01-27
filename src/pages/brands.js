@@ -118,7 +118,12 @@ const LogoContainer3 = styled.div`
   }
 `;
 
-const BrandLink = styled.a``;
+const BrandLink = styled.a`
+transition: transform .55s;
+:hover {
+  transform: scale(1.25);
+}
+`;
 
 const Logo = styled.img`
   width: 50%;
@@ -146,27 +151,27 @@ const Brands = () => (
       <BrandLink href="https://sagerbeerworks.com/" target="_blank">
         <Logo src="https://i.imgur.com/D2PxpfJ.png" />
       </BrandLink>
-      <BrandLink href="http://rustynickelbrewing.com/" target="_blank">
-        <Logo src="https://i.imgur.com/PUEJmsR.jpg" />
+      <BrandLink href="https://www.westshorebrewing.com/" target="_blank">
+        <Logo src="https://i.imgur.com/hkFOFfi.png" />
       </BrandLink>
     </LogoContainer1>
     <LogoContainer2>
-      <BrandLink href="https://www.lillybellemeads.com/" target="_blank">
-        <Logo src="https://i.imgur.com/iiePk9U.png" />
-      </BrandLink>
       <BrandLink href="https://www.butternutsbeerandale.com/" target="_blank">
-        <Logo src="https://i.imgur.com/Vv4AcHe.png" />
+        <Logo src="https://i.imgur.com/hGWw8TU.jpg" />
       </BrandLink>
       <BrandLink href="https://ninemaidensbrewing.com/" target="_blank">
         <Logo src="https://i.imgur.com/sPjMWdH.jpg" />
       </BrandLink>
+      <BrandLink href="https://elifishbrewing.com/" target="blank">
+        <Logo src="https://i.imgur.com/MCc86pE.jpg" />
+      </BrandLink>
     </LogoContainer2>
     <LogoContainer3>
-      <BrandLink href="https://elifishbrewing.com/" target="blank">
-        <Logo src="https://i.imgur.com/vp9vYAt.png" />
+      <BrandLink href="https://www.lillybellemeads.com/" target="_blank">
+        <Logo src="https://i.imgur.com/KkN1Fdv.png" />
       </BrandLink>
-      <BrandLink href="https://www.westshorebrewing.com/" target="_blank">
-        <Logo src="https://i.imgur.com/hkFOFfi.png" />
+      <BrandLink href="http://rustynickelbrewing.com/" target="_blank">
+        <Logo src="https://i.imgur.com/Y7PdPio.png" />
       </BrandLink>
     </LogoContainer3>
   </div>
