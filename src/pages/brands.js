@@ -93,6 +93,7 @@ const LogoContainer2 = styled.div`
   margin-left: auto;
   margin-right: auto;
   border-color: rgb(154, 157, 159);
+  margin-top: 3%;
   @media (min-width: 550px) {
     grid-template-columns: 1fr 1fr 1fr;
     width: 95%;
@@ -147,17 +148,20 @@ const Brands = () => (
       BrewBuddies is proud to represent the following brands. Click their logos
       to learn more about each of our partners!
     </BrandInfo>
-    <LogoContainer1>
+    <LogoContainer2>
       <BrandLink href="https://sagerbeerworks.com/" target="_blank">
         <Logo src="https://i.imgur.com/D2PxpfJ.png" />
       </BrandLink>
       <BrandLink href="https://www.westshorebrewing.com/" target="_blank">
         <Logo src="https://i.imgur.com/hkFOFfi.png" />
       </BrandLink>
-    </LogoContainer1>
+      <BrandLink href="https://www.westshorebrewing.com/" target="_blank">
+        <Logo src="https://i.imgur.com/l94GXvG.jpg" />
+      </BrandLink>
+    </LogoContainer2>
     <LogoContainer2>
-      <BrandLink href="https://www.butternutsbeerandale.com/" target="_blank">
-        <Logo src="https://i.imgur.com/hGWw8TU.jpg" />
+      <BrandLink href="https://www.stoneyardbrewingcompany.com/" target="_blank">
+        <Logo src="https://i.imgur.com/XzcdnKM.jpg" />
       </BrandLink>
       <BrandLink href="https://ninemaidensbrewing.com/" target="_blank">
         <Logo src="https://i.imgur.com/sPjMWdH.jpg" />
@@ -166,14 +170,17 @@ const Brands = () => (
         <Logo src="https://i.imgur.com/MCc86pE.jpg" />
       </BrandLink>
     </LogoContainer2>
-    <LogoContainer3>
+    <LogoContainer2>
       <BrandLink href="https://www.lillybellemeads.com/" target="_blank">
         <Logo src="https://i.imgur.com/KkN1Fdv.png" />
       </BrandLink>
       <BrandLink href="http://rustynickelbrewing.com/" target="_blank">
         <Logo src="https://i.imgur.com/Y7PdPio.png" />
       </BrandLink>
-    </LogoContainer3>
+      <BrandLink href="https://www.lakedrumbrewing.com/" target="_blank">
+        <Logo src="https://i.imgur.com/C9veLRc.jpg" />
+      </BrandLink>
+    </LogoContainer2>
   </div>
 );
 
