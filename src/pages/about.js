@@ -86,7 +86,7 @@ const About = () => (
       experience for breweries, bars, restaurants, and the consumers themselves.
       New York State allows craft beverage companies to sell their products
       directly to consumers and retailers without the need to partner with a
-      traditional distributor, and our goal is to help those companies realize
+      traditional distributor and our goal is to help those companies realize
       the maximum potential from this unique opportunity.
     </MissionStatement>
     <AboutHeader>What can BrewBuddies do for you?</AboutHeader>
