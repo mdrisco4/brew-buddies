@@ -123,6 +123,9 @@ const Footer = () => (
     <ContactInfo>Rob@BrewBuddiesNY.com</ContactInfo>
     <ContactInfo>(585) 813-4506</ContactInfo> */}
     <BottomBorder />
+    <div>Site built by Michael Driscoll</div>
+    <div>If you ant to know more or get in touch link right</div>
+    <div>Here</div>
   </div>
 );
 

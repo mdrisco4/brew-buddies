@@ -24,8 +24,8 @@ const MenuLinksContainer = styled.div`
   margin-bottom: 12px;
   justify-content: space-between;
   @media (min-width: 650px) {
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 0;
+    padding-right: 0;
   }
   @media (min-width: 768px) {
     flex-direction: row;
