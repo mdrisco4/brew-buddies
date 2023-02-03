@@ -138,14 +138,55 @@ const PhoneLink = styled.a`
   }
 `;
 
+const SocialMedia = styled.img`
+  width: 28px;
+  margin: 4px 8px 4px 8px;
+  @media (min-width: 480px) {
+    width: 30px;
+  }
+  @media (min-width: 576px) {
+    width: 35px;
+  }
+  @media (min-width: 650px) {
+    width: 39px;
+    margin: 4px 10px 4px 10px;
+  }
+  @media (min-width: 768px) {
+    width: 45px;
+    margin: 4px 12px 4px 12px;
+  }
+  @media (min-width: 870px) {
+    width: 51px;
+  }
+  @media (min-width: 980px) {
+    width: 56px;
+  }
+  @media (min-width: 1100px) {
+    width: 63px;
+    margin: 4px 15px 4px 15px;
+  }
+  @media (min-width: 1260px) {
+    width: 68px;
+  }
+`
+
+const SocialMediaLink = styled.a`` 
 
 const Contact = () => (
   <div style={{ maxWidth: "15000px", backgroundColor: "rgb(135, 180, 225)", textAlign: "center" }}>
-    <ContactHeader>Reach Out Any Time!</ContactHeader>
+    <div>
+      <ContactHeader>Reach Out Any Time!</ContactHeader>
     <ContactInfo>Rob Richenberg</ContactInfo>
     <ContactInfo>Founder/Beer Guru</ContactInfo>
     <EmailLink href="mailto:Rob@BrewBuddiesNY.com" target="_blank">Rob@BrewBuddiesNY.com</EmailLink><br></br>
     <PhoneLink href="tel:1-585-813-4506">(585) 813-4506</PhoneLink>
+      </div>
+    <SocialMediaLink href="https://www.facebook.com/BrewBuddiesNY/?paipv=0&eav=AfYBgyI-HEEXzXM_Y6jPbRy2K28VftlJf0LtnmqPZzwm87AQkv6YgWle06xw6MdEVkI&_rdr" target="_blank" >
+    <SocialMedia src="https://i.imgur.com/Cu8kxbg.png" />
+    </SocialMediaLink>
+    <SocialMediaLink href="https://www.instagram.com/brewbuddiesny/?hl=en" target="_blank" >
+    <SocialMedia src="https://i.imgur.com/nBskSqC.png" />
+    </SocialMediaLink>
   </div>
 );
 

@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import "../styles/fonts.css";
 
+
 const TopBorder = styled.div`
   background-color: rgb(135, 180, 225);
   height: 200px;
@@ -59,54 +60,73 @@ const Logo = styled.img`
   width: 35%;
   margin-left: 32.5%;
   margin-right: 32.5%;
-  padding-top: 40px;
   @media (min-width: 768px) {
   }
-`;
+  `;
 
-const ContactInfo = styled.div`
-  text-align: center;
-  font-size: 20px;
-  font-family: "Comfortaa", cursive;
+const SocialMedia = styled.img`
+padding-top: 40px;
+  width: 36px;
+  margin: 10px;
   @media (min-width: 768px) {
+    padding-top: 20px;
   }
-`;
+`
 
-// const EmailLink = styled.a`
-//   font-family: "Montserrat Alternates";
-//   color: black;
-//   text-shadow: 1px 1px 3px white;
-//   text-decoration: none;
-//   font-weight: bold;
-//   margin: 4px 5%;
-//   font-size: 24px;
-//   @media (min-width: 600px) {
-//     font-size: 30px;
-//   }
-//   &:hover {
-//     color: darkblue;
-//     text-shadow: 4px 4px 5px darkblue;
-//     filter:drop-shadow(1px 1px white);
-//   }
-// `
+const SocialMediaLink = styled.a`` 
 
-// const PhoneLink = styled.a`
-//   font-family: "Montserrat Alternates";
-//   color: black;
-//   text-shadow: 1px 1px 1px white;
-//   text-decoration: none;
-//   font-weight: 900;
-//   margin: 4px 5%;
-//   font-size: 24px;
-//   @media (min-width: 600px) {
-//     font-size: 30px;
-//   }
-//   &:hover {
-//     color: darkblue;
-//     text-shadow: 4px 4px 5px darkblue;
-//     filter:drop-shadow(1px 1px white);
-//   }
-// `
+const Spacer = styled.div`
+background-color: rgb(220, 180, 180);
+  height: 45px;
+  @media (min-width: 540px) {
+    height: 45px;
+  }
+  @media (min-width: 650px) {
+    height: 50px;
+  }
+  @media (min-width: 768px) {
+    height: 68px;
+  }
+  @media (min-width: 840px) {
+    height: 72px;
+  }
+  @media (min-width: 960px) {
+    height: 88px;
+  }
+  @media (min-width: 1100px) {
+    height: 96px;
+  }
+  @media (min-width: 1250px) {
+    height: 100px;
+  }
+;
+`
+
+const MyInfo = styled.div`
+  font-size: 10px;
+  @media (min-width: 540px) {
+    font-size: 12px;
+  }
+  @media (min-width: 650px) {
+    font-size: 14px;
+  }
+  @media (min-width: 768px) {
+    font-size: 18px;
+  }
+  @media (min-width: 840px) {
+  font-size: 21px
+  }
+  @media (min-width: 960px) {
+  font-size: 22px;
+  }
+  @media (min-width: 1100px) {
+  font-size: 24px;
+  }
+  @media (min-width: 1250px) {
+  font-size: 27px;
+  }
+;
+`
 
 const Footer = () => (
   <div
@@ -118,14 +138,19 @@ const Footer = () => (
   >
     <TopBorder />
     <Logo src="https://i.imgur.com/rpLw26n.png" />
-    {/* <ContactInfo>Rob Richenberg</ContactInfo>
-    <ContactInfo>Founder/Beer Guru</ContactInfo>
-    <ContactInfo>Rob@BrewBuddiesNY.com</ContactInfo>
-    <ContactInfo>(585) 813-4506</ContactInfo> */}
+    <SocialMediaLink href="https://www.facebook.com/BrewBuddiesNY/?paipv=0&eav=AfYBgyI-HEEXzXM_Y6jPbRy2K28VftlJf0LtnmqPZzwm87AQkv6YgWle06xw6MdEVkI&_rdr" target="_blank" >
+    <SocialMedia src="https://i.imgur.com/Cu8kxbg.png" />
+    </SocialMediaLink>
+    <SocialMediaLink href="https://www.instagram.com/brewbuddiesny/?hl=en" target="_blank" >
+    <SocialMedia src="https://i.imgur.com/nBskSqC.png" />
+    </SocialMediaLink>
+    <Spacer />
+    <MyInfo>Site built by Michael Driscoll</MyInfo>
+    <MyInfo>For more information click below</MyInfo>
+    <SocialMediaLink href="https://michaeldriscolldc.com/" target="_blank" >
+    <MyInfo>Here</MyInfo>
+    </SocialMediaLink>
     <BottomBorder />
-    <div>Site built by Michael Driscoll</div>
-    <div>If you ant to know more or get in touch link right</div>
-    <div>Here</div>
   </div>
 );
 
