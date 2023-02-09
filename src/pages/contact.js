@@ -141,6 +141,7 @@ const PhoneLink = styled.a`
 const SocialMedia = styled.img`
   width: 28px;
   margin: 4px 8px 4px 8px;
+  transition: transform .55s;
   @media (min-width: 480px) {
     width: 30px;
   }
@@ -168,6 +169,9 @@ const SocialMedia = styled.img`
   @media (min-width: 1260px) {
     width: 68px;
   }
+:hover {
+  transform: scale(1.25);
+}
 `
 
 const SocialMediaLink = styled.a`` 
