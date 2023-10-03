@@ -186,7 +186,7 @@ const Brands = () => (
       <BrandLink href="https://visitgeneseeny.com/destinations/tracy-bs-market-and-farm-brewery" target="_blank">
       <Logo src="https://i.imgur.com/Y02LToM.jpg" />
       </BrandLink>
-      <BrandLink href="https://untappd.com/b/twin-petrels-seltzer-co-the-forbidden-fruit/5226125" target="_blank">
+      <BrandLink href="https://www.beelzebubbles.com/" target="_blank">
       <Logo  src="https://i.imgur.com/Y4kmurN.jpg" />
       </BrandLink>
     </LogoContainer1>
