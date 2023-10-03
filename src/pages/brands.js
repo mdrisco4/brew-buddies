@@ -77,6 +77,7 @@ const LogoContainer1 = styled.div`
   margin-left: auto;
   margin-right: auto;
   border-color: rgb(154, 157, 159);
+  padding-top: 30px;
   @media (min-width: 550px) {
     grid-template-columns: 1fr 1fr;
     width: 70%;
@@ -178,9 +179,17 @@ const Brands = () => (
         <Logo src="https://i.imgur.com/Y7PdPio.png" />
       </BrandLink>
       <BrandLink href="https://www.lakedrumbrewing.com/" target="_blank">
-        <Logo src="https://i.imgur.com/C9veLRc.jpg" />
+        <Logo src="https://i.imgur.com/nxl6jxY.png" />
       </BrandLink>
     </LogoContainer2>
+    <LogoContainer1>
+      <BrandLink href="https://visitgeneseeny.com/destinations/tracy-bs-market-and-farm-brewery" target="_blank">
+      <Logo src="https://i.imgur.com/Y02LToM.jpg" />
+      </BrandLink>
+      <BrandLink href="https://untappd.com/b/twin-petrels-seltzer-co-the-forbidden-fruit/5226125" target="_blank">
+      <Logo  src="https://i.imgur.com/Y4kmurN.jpg" />
+      </BrandLink>
+    </LogoContainer1>
   </div>
 );
 
