@@ -153,8 +153,8 @@ const Brands = () => (
       <BrandLink href="https://sagerbeerworks.com/" target="_blank">
         <Logo src="https://i.imgur.com/D2PxpfJ.png" />
       </BrandLink>
-      <BrandLink href="https://www.westshorebrewing.com/" target="_blank">
-        <Logo src="https://i.imgur.com/hkFOFfi.png" />
+      <BrandLink href="https://www.irontugbrewing.com/" target="_blank">
+        <Logo src="https://i.imgur.com/yfUaxAQ.png" />
       </BrandLink>
       <BrandLink href="https://www.westshorebrewing.com/" target="_blank">
         <Logo src="https://i.imgur.com/l94GXvG.jpg" />
@@ -165,10 +165,10 @@ const Brands = () => (
         <Logo src="https://i.imgur.com/XzcdnKM.jpg" />
       </BrandLink>
       <BrandLink href="https://ninemaidensbrewing.com/" target="_blank">
-        <Logo src="https://i.imgur.com/sPjMWdH.jpg" />
+        <Logo src="https://i.imgur.com/16ZsSO2.png" />
       </BrandLink>
       <BrandLink href="https://elifishbrewing.com/" target="blank">
-        <Logo src="https://i.imgur.com/MCc86pE.jpg" />
+        <Logo src="https://i.imgur.com/tdGuKKq.png" />
       </BrandLink>
     </LogoContainer2>
     <LogoContainer2>
@@ -179,15 +179,23 @@ const Brands = () => (
         <Logo src="https://i.imgur.com/Y7PdPio.png" />
       </BrandLink>
       <BrandLink href="https://www.lakedrumbrewing.com/" target="_blank">
-        <Logo src="https://i.imgur.com/nxl6jxY.png" />
+        <Logo src="https://i.imgur.com/RQzC9Jy.png" />
       </BrandLink>
     </LogoContainer2>
     <LogoContainer1>
       <BrandLink href="https://visitgeneseeny.com/destinations/tracy-bs-market-and-farm-brewery" target="_blank">
-      <Logo src="https://i.imgur.com/Y02LToM.jpg" />
+      <Logo src="https://i.imgur.com/Q7i1cGk.jpg" />
       </BrandLink>
       <BrandLink href="https://www.beelzebubbles.com/" target="_blank">
       <Logo  src="https://i.imgur.com/Y4kmurN.jpg" />
+      </BrandLink>
+    </LogoContainer1>
+    <LogoContainer1>
+      <BrandLink href="https://www.luckyharebrewing.com/" target="_blank">
+      <Logo src="https://i.imgur.com/KJCE4FK.png" />
+      </BrandLink>
+      <BrandLink href="https://happygutsanctuary.com/index.html" target="_blank">
+      <Logo  src="https://i.imgur.com/Y6wWNjt.png" />
       </BrandLink>
     </LogoContainer1>
   </div>
