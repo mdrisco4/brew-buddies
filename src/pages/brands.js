@@ -182,22 +182,39 @@ const Brands = () => (
         <Logo src="https://i.imgur.com/RQzC9Jy.png" />
       </BrandLink>
     </LogoContainer2>
-    <LogoContainer1>
+    <LogoContainer2>
       <BrandLink href="https://visitgeneseeny.com/destinations/tracy-bs-market-and-farm-brewery" target="_blank">
       <Logo src="https://i.imgur.com/Q7i1cGk.jpg" />
       </BrandLink>
       <BrandLink href="https://www.beelzebubbles.com/" target="_blank">
       <Logo  src="https://i.imgur.com/Y4kmurN.jpg" />
       </BrandLink>
-    </LogoContainer1>
-    <LogoContainer1>
+      <BrandLink href="https://www.katboocha.com/" target="_blank">
+      <Logo  src="https://i.imgur.com/ZhvEMfn.png" />
+      </BrandLink>
+    </LogoContainer2>
+    <LogoContainer2>
       <BrandLink href="https://www.luckyharebrewing.com/" target="_blank">
       <Logo src="https://i.imgur.com/KJCE4FK.png" />
       </BrandLink>
       <BrandLink href="https://happygutsanctuary.com/index.html" target="_blank">
       <Logo  src="https://i.imgur.com/Y6wWNjt.png" />
       </BrandLink>
-    </LogoContainer1>
+      <BrandLink href="https://seedandstonecidery.com/" target="_blank">
+      <Logo  src="https://i.imgur.com/42OnRME.png" />
+      </BrandLink>
+    </LogoContainer2>
+    <LogoContainer2>
+      <BrandLink href="https://www.tilbrewing.com/" target="_blank">
+      <Logo src="https://i.imgur.com/GyvBrIu.png" />
+      </BrandLink>
+      <BrandLink href="https://www.facebook.com/steampunkcider/" target="_blank">
+      <Logo  src="https://i.imgur.com/UhCuvXc.jpg" />
+      </BrandLink>
+      <BrandLink href="https://seedandstonecidery.com/" target="_blank">
+      <Logo  src="https://i.imgur.com/jLQV4S3.gif" />
+      </BrandLink>
+    </LogoContainer2>
   </div>
 );
 
