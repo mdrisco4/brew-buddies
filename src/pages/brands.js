@@ -156,13 +156,13 @@ const Brands = () => (
       <BrandLink href="https://www.irontugbrewing.com/" target="_blank">
         <Logo src="https://i.imgur.com/yfUaxAQ.png" />
       </BrandLink>
-      <BrandLink href="https://www.westshorebrewing.com/" target="_blank">
-        <Logo src="https://i.imgur.com/l94GXvG.jpg" />
+      <BrandLink href="https://triphammerbierwerks.com/" target="_blank">
+        <Logo src="https://i.imgur.com/SIIWc7a.png" />
       </BrandLink>
     </LogoContainer2>
     <LogoContainer2>
       <BrandLink href="https://www.stoneyardbrewingcompany.com/" target="_blank">
-        <Logo src="https://i.imgur.com/XzcdnKM.jpg" />
+        <Logo src="https://i.imgur.com/hpDcx39.png" />
       </BrandLink>
       <BrandLink href="https://ninemaidensbrewing.com/" target="_blank">
         <Logo src="https://i.imgur.com/16ZsSO2.png" />
@@ -184,10 +184,10 @@ const Brands = () => (
     </LogoContainer2>
     <LogoContainer2>
       <BrandLink href="https://visitgeneseeny.com/destinations/tracy-bs-market-and-farm-brewery" target="_blank">
-      <Logo src="https://i.imgur.com/Q7i1cGk.jpg" />
+      <Logo src="https://i.imgur.com/crWmP1S.png" />
       </BrandLink>
       <BrandLink href="https://www.beelzebubbles.com/" target="_blank">
-      <Logo  src="https://i.imgur.com/Y4kmurN.jpg" />
+      <Logo  src="https://i.imgur.com/T0u0a1N.png" />
       </BrandLink>
       <BrandLink href="https://www.katboocha.com/" target="_blank">
       <Logo  src="https://i.imgur.com/ZhvEMfn.png" />
@@ -209,7 +209,7 @@ const Brands = () => (
       <Logo src="https://i.imgur.com/GyvBrIu.png" />
       </BrandLink>
       <BrandLink href="https://www.facebook.com/steampunkcider/" target="_blank">
-      <Logo  src="https://i.imgur.com/UhCuvXc.jpg" />
+      <Logo  src="https://i.imgur.com/tL5W19N.png" />
       </BrandLink>
       <BrandLink href="https://seedandstonecidery.com/" target="_blank">
       <Logo  src="https://i.imgur.com/jLQV4S3.gif" />
