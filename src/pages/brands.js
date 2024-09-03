@@ -215,6 +215,17 @@ const Brands = () => (
       <Logo  src="https://i.imgur.com/jLQV4S3.gif" />
       </BrandLink>
     </LogoContainer2>
+    <LogoContainer2>
+      <BrandLink href="https://bullfinchbrewpub.com/" target="_blank">
+      <Logo src="https://i.imgur.com/nRj22M5.png" />
+      </BrandLink>
+      <BrandLink href="https://wagnerbrewing.com/" target="_blank">
+      <Logo  src="https://i.imgur.com/YkLBZSh.png" />
+      </BrandLink>
+      <BrandLink href="https://brazenbrewco.com/" target="_blank">
+      <Logo  src="https://i.imgur.com/6KNbsI6.png" />
+      </BrandLink>
+    </LogoContainer2>
   </div>
 );
 
