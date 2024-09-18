@@ -145,11 +145,11 @@ const Footer = () => (
     <SocialMedia src="https://i.imgur.com/nBskSqC.png" />
     </SocialMediaLink>
     <Spacer />
-    <MyInfo>Site built by Michael Driscoll</MyInfo>
+    {/* <MyInfo>Site built by Michael Driscoll</MyInfo>
     <MyInfo>For more information click below</MyInfo>
     <SocialMediaLink href="https://michaeldriscolldc.com/" target="_blank" >
     <MyInfo>Here</MyInfo>
-    </SocialMediaLink>
+    </SocialMediaLink> */}
     <BottomBorder />
   </div>
 );
