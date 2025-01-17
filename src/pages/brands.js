@@ -168,8 +168,8 @@ const Brands = () => (
       >
         <Logo src="https://i.imgur.com/hpDcx39.png" />
       </BrandLink>
-      <BrandLink href="https://ninemaidensbrewing.com/" target="_blank">
-        <Logo src="https://i.imgur.com/16ZsSO2.png" />
+      <BrandLink href="https://octopusbrew.com/" target="_blank">
+        <Logo src="https://i.imgur.com/i9fFQCZ.png" />
       </BrandLink>
       <BrandLink href="https://elifishbrewing.com/" target="blank">
         <Logo src="https://i.imgur.com/tdGuKKq.png" />
@@ -248,8 +248,8 @@ const Brands = () => (
       </BrandLink>
     </LogoContainer2>
     <LogoContainer3>
-      <BrandLink href="https://octopusbrew.com/" target="_blank">
-        <Logo src="https://i.imgur.com/i9fFQCZ.png" />
+    <BrandLink href="https://ninemaidensbrewing.com/" target="_blank">
+        <Logo src="https://i.imgur.com/16ZsSO2.png" />
       </BrandLink>
       <BrandLink href="https://www.stumblinmonkeybeer.com/" target="_blank">
         <Logo src="https://i.imgur.com/z5Wi4iB.png" />
