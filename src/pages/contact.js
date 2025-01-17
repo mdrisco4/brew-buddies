@@ -228,7 +228,7 @@ const Contact = () => (
       </NewClientLink>
       <ContactHeader>Reach Out Any Time!</ContactHeader>
       <ContactInfo>Rob Richenberg</ContactInfo>
-      <ContactInfo>Founder/Beer Guru</ContactInfo>
+      <ContactInfo>Founder/Director of Sales</ContactInfo>
       <EmailLink href="mailto:Rob@BrewBuddiesNY.com" target="_blank">
         Rob@BrewBuddiesNY.com
       </EmailLink>

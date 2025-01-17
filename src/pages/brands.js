@@ -183,8 +183,8 @@ const Brands = () => (
       </BrandLink>
     </LogoContainer2>
     <LogoContainer2>
-      <BrandLink href="https://visitgeneseeny.com/destinations/tracy-bs-market-and-farm-brewery" target="_blank">
-      <Logo src="https://i.imgur.com/crWmP1S.png" />
+      <BrandLink href="https://www.twinforkbeer.com/" target="_blank">
+      <Logo src="https://i.imgur.com/hj0ZqYt.png" />
       </BrandLink>
       <BrandLink href="https://www.beelzebubbles.com/" target="_blank">
       <Logo  src="https://i.imgur.com/T0u0a1N.png" />
@@ -223,9 +223,28 @@ const Brands = () => (
       <Logo  src="https://i.imgur.com/YkLBZSh.png" />
       </BrandLink>
       <BrandLink href="https://brazenbrewco.com/" target="_blank">
-      <Logo  src="https://i.imgur.com/6KNbsI6.png" />
+      <Logo  src="https://i.imgur.com/raXHyWZ.png" />
       </BrandLink>
     </LogoContainer2>
+    <LogoContainer2>
+      <BrandLink href="https://www.brindlehausbrewing.com/" target="_blank">
+      <Logo src="https://i.imgur.com/GjQOJxj.png" />
+      </BrandLink>
+      <BrandLink href="https://buffalo-brewing-company.com/" target="_blank">
+      <Logo  src="https://i.imgur.com/99eoAiw.png" />
+      </BrandLink>
+      <BrandLink href="https://www.peacemakerbrewing.com/" target="_blank">
+      <Logo  src="https://i.imgur.com/yK3kthB.png" />
+      </BrandLink>
+    </LogoContainer2>
+    <LogoContainer3>
+      <BrandLink href="https://octopusbrew.com/" target="_blank">
+      <Logo src="https://i.imgur.com/i9fFQCZ.png" />
+      </BrandLink>
+      <BrandLink href="https://www.stumblinmonkeybeer.com/" target="_blank">
+      <Logo  src="https://i.imgur.com/z5Wi4iB.png" />
+      </BrandLink>
+    </LogoContainer3>
   </div>
 );
 
