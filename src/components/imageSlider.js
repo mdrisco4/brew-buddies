@@ -23,9 +23,35 @@ const Dot = styled.div`
 const SliderText = styled.div`
   font-family: "Comfortaa", cursive;
   margin-bottom: 20px;
-  width: 50%;
+  width: 60%;
   margin-left: auto;
   margin-right: auto;
+  font-size: 14px;
+  @media (min-width: 480px) {
+    font-size: 16px;
+  }
+  @media (min-width: 576px) {
+    width: 70%;
+    font-size: 20px;
+  }
+  @media (min-width: 650px) {
+    font-size: 24px;
+  }
+  @media (min-width: 768px) {
+    font-size: 25px;
+  }
+  @media (min-width: 870px) {
+    font-size: 27px;
+  }
+  @media (min-width: 980px) {
+    font-size: 30px;
+  }
+  @media (min-width: 1100px) {
+    font-size: 32px;
+  }
+  @media (min-width: 1260px) {
+    font-size: 35px;
+  }
 `;
 
 const Slide = ({ property }) => {

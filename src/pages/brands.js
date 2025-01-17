@@ -57,7 +57,7 @@ const BrandInfo = styled.div`
     font-size: 33px;
   }
   @media (min-width: 870px) {
-    font: 36px;
+    font-size: 36px;
   }
   @media (min-width: 980px) {
     font-size: 40px;
