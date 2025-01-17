@@ -234,7 +234,7 @@ const Brands = () => (
       </BrandLink>
     </LogoContainer2>
     <LogoContainer2>
-    <BrandLink href="https://www.stumblinmonkeybeer.com/" target="_blank">
+      <BrandLink href="https://www.stumblinmonkeybeer.com/" target="_blank">
         <Logo src="https://i.imgur.com/z5Wi4iB.png" />
       </BrandLink>
       <BrandLink href="https://www.tilbrewing.com/" target="_blank">
@@ -245,15 +245,13 @@ const Brands = () => (
       </BrandLink>
     </LogoContainer2>
     <LogoContainer3>
-    <BrandLink href="https://www.twinforkbeer.com/" target="_blank">
+      <BrandLink href="https://www.twinforkbeer.com/" target="_blank">
         <Logo src="https://i.imgur.com/hj0ZqYt.png" />
       </BrandLink>
-    <BrandLink href="https://wagnerbrewing.com/" target="_blank">
+      <BrandLink href="https://wagnerbrewing.com/" target="_blank">
         <Logo src="https://i.imgur.com/YkLBZSh.png" />
       </BrandLink>
     </LogoContainer3>
-
-
 
     {/* <LogoContainer2>
       <BrandLink href="https://sagerbeerworks.com/" target="_blank">
