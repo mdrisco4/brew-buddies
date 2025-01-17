@@ -151,6 +151,111 @@ const Brands = () => (
       Click their logos to learn more about each of the brands we work with!'
     </BrandInfo>
     <LogoContainer2>
+      <BrandLink href="https://www.beelzebubbles.com/" target="_blank">
+        <Logo src="https://i.imgur.com/T0u0a1N.png" />
+      </BrandLink>
+      <BrandLink href="https://brazenbrewco.com/" target="_blank">
+        <Logo src="https://i.imgur.com/raXHyWZ.png" />
+      </BrandLink>
+      <BrandLink href="https://www.brindlehausbrewing.com/" target="_blank">
+        <Logo src="https://i.imgur.com/GjQOJxj.png" />
+      </BrandLink>
+    </LogoContainer2>
+    <LogoContainer2>
+      <BrandLink href="https://buffalo-brewing-company.com/" target="_blank">
+        <Logo src="https://i.imgur.com/99eoAiw.png" />
+      </BrandLink>
+      <BrandLink href="https://bullfinchbrewpub.com/" target="_blank">
+        <Logo src="https://i.imgur.com/nRj22M5.png" />
+      </BrandLink>
+      <BrandLink href="https://elifishbrewing.com/" target="blank">
+        <Logo src="https://i.imgur.com/tdGuKKq.png" />
+      </BrandLink>
+    </LogoContainer2>
+    <LogoContainer2>
+      <BrandLink
+        href="https://happygutsanctuary.com/index.html"
+        target="_blank"
+      >
+        <Logo src="https://i.imgur.com/Y6wWNjt.png" />
+      </BrandLink>
+      <BrandLink href="https://www.irontugbrewing.com/" target="_blank">
+        <Logo src="https://i.imgur.com/yfUaxAQ.png" />
+      </BrandLink>
+      <BrandLink href="https://www.katboocha.com/" target="_blank">
+        <Logo src="https://i.imgur.com/ZhvEMfn.png" />
+      </BrandLink>
+    </LogoContainer2>
+    <LogoContainer2>
+      <BrandLink href="https://www.lakedrumbrewing.com/" target="_blank">
+        <Logo src="https://i.imgur.com/RQzC9Jy.png" />
+      </BrandLink>
+      <BrandLink href="https://www.lillybellemeads.com/" target="_blank">
+        <Logo src="https://i.imgur.com/KkN1Fdv.png" />
+      </BrandLink>
+      <BrandLink href="https://seedandstonecidery.com/" target="_blank">
+        <Logo src="https://i.imgur.com/jLQV4S3.gif" />
+      </BrandLink>
+    </LogoContainer2>
+    <LogoContainer2>
+      <BrandLink href="https://www.luckyharebrewing.com/" target="_blank">
+        <Logo src="https://i.imgur.com/KJCE4FK.png" />
+      </BrandLink>
+      <BrandLink href="https://ninemaidensbrewing.com/" target="_blank">
+        <Logo src="https://i.imgur.com/16ZsSO2.png" />
+      </BrandLink>
+      <BrandLink href="https://www.peacemakerbrewing.com/" target="_blank">
+        <Logo src="https://i.imgur.com/yK3kthB.png" />
+      </BrandLink>
+    </LogoContainer2>
+    <LogoContainer2>
+      <BrandLink href="http://rustynickelbrewing.com/" target="_blank">
+        <Logo src="https://i.imgur.com/Y7PdPio.png" />
+      </BrandLink>
+      <BrandLink href="https://sagerbeerworks.com/" target="_blank">
+        <Logo src="https://i.imgur.com/D2PxpfJ.png" />
+      </BrandLink>
+      <BrandLink href="https://seedandstonecidery.com/" target="_blank">
+        <Logo src="https://i.imgur.com/42OnRME.png" />
+      </BrandLink>
+    </LogoContainer2>
+    <LogoContainer2>
+      <BrandLink href="https://octopusbrew.com/" target="_blank">
+        <Logo src="https://i.imgur.com/i9fFQCZ.png" />
+      </BrandLink>
+      <BrandLink href="https://www.steampunkcider.com/" target="_blank">
+        <Logo src="https://i.imgur.com/tL5W19N.png" />
+      </BrandLink>
+      <BrandLink
+        href="https://www.stoneyardbrewingcompany.com/"
+        target="_blank"
+      >
+        <Logo src="https://i.imgur.com/hpDcx39.png" />
+      </BrandLink>
+    </LogoContainer2>
+    <LogoContainer2>
+    <BrandLink href="https://www.stumblinmonkeybeer.com/" target="_blank">
+        <Logo src="https://i.imgur.com/z5Wi4iB.png" />
+      </BrandLink>
+      <BrandLink href="https://www.tilbrewing.com/" target="_blank">
+        <Logo src="https://i.imgur.com/GyvBrIu.png" />
+      </BrandLink>
+      <BrandLink href="https://triphammerbierwerks.com/" target="_blank">
+        <Logo src="https://i.imgur.com/SIIWc7a.png" />
+      </BrandLink>
+    </LogoContainer2>
+    <LogoContainer3>
+    <BrandLink href="https://www.twinforkbeer.com/" target="_blank">
+        <Logo src="https://i.imgur.com/hj0ZqYt.png" />
+      </BrandLink>
+    <BrandLink href="https://wagnerbrewing.com/" target="_blank">
+        <Logo src="https://i.imgur.com/YkLBZSh.png" />
+      </BrandLink>
+    </LogoContainer3>
+
+
+
+    {/* <LogoContainer2>
       <BrandLink href="https://sagerbeerworks.com/" target="_blank">
         <Logo src="https://i.imgur.com/D2PxpfJ.png" />
       </BrandLink>
@@ -215,10 +320,7 @@ const Brands = () => (
       <BrandLink href="https://www.tilbrewing.com/" target="_blank">
         <Logo src="https://i.imgur.com/GyvBrIu.png" />
       </BrandLink>
-      <BrandLink
-        href="https://www.facebook.com/steampunkcider/"
-        target="_blank"
-      >
+      <BrandLink href="https://www.steampunkcider.com/" target="_blank">
         <Logo src="https://i.imgur.com/tL5W19N.png" />
       </BrandLink>
       <BrandLink href="https://seedandstonecidery.com/" target="_blank">
@@ -248,13 +350,13 @@ const Brands = () => (
       </BrandLink>
     </LogoContainer2>
     <LogoContainer3>
-    <BrandLink href="https://ninemaidensbrewing.com/" target="_blank">
+      <BrandLink href="https://ninemaidensbrewing.com/" target="_blank">
         <Logo src="https://i.imgur.com/16ZsSO2.png" />
       </BrandLink>
       <BrandLink href="https://www.stumblinmonkeybeer.com/" target="_blank">
         <Logo src="https://i.imgur.com/z5Wi4iB.png" />
       </BrandLink>
-    </LogoContainer3>
+    </LogoContainer3> */}
   </div>
 );
 
