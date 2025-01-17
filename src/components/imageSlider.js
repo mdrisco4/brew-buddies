@@ -4,11 +4,10 @@ import "../styles/imageSlider.css";
 import styled from "styled-components";
 import { slide } from "react-burger-menu";
 
-
 const CircleContainer = styled.div`
-display: flex;
-justify-content: center;
-`
+  display: flex;
+  justify-content: center;
+`;
 
 const Dot = styled.div`
   border-radius: 50%;
@@ -19,9 +18,15 @@ const Dot = styled.div`
   background-color: green;
   border: 4px solid black;
   margin: 0 5px 0;
-`
+`;
 
-
+const SliderText = styled.div`
+  font-family: "Comfortaa", cursive;
+  margin-bottom: 20px;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+`;
 
 const Slide = ({ property }) => {
   const { img, index } = property;
@@ -91,18 +96,18 @@ class Slider extends React.Component {
       property: 0,
     });
     // this.state.property.index = 0
-    console.log("slide 1")
-  }
+    console.log("slide 1");
+  };
 
   SlideTwo = () => {
-    this.state.props.slideData = 1
-    console.log("slide 2")
-  }
+    this.state.props.slideData = 1;
+    console.log("slide 2");
+  };
 
   SlideThree = () => {
-    this.state.props.slideData = 2
-    console.log("slide 3")
-  }
+    this.state.props.slideData = 2;
+    console.log("slide 3");
+  };
 
   render() {
     const { stopFiring, property } = this.state;
@@ -114,7 +119,7 @@ class Slider extends React.Component {
 
     window.onload = function () {
       slideShow();
-      console.log("loaded")
+      console.log("loaded");
     };
 
     // window.$(document).ready = function () {
@@ -126,14 +131,19 @@ class Slider extends React.Component {
     //   slideShow()
     //   // , {once : true};
     //   console.log("loaded")
-    // };   
+    // };
 
     // window.addEventListener("load", slideShow, false);
     //   console.log("loaded")
-    // };   
+    // };
 
     return (
       <div>
+        <SliderText>
+          BrewBuddies was founded to disrupt the status quo in the craft
+          beverage industry, which has long been ripe for change. Follow us on
+          our journey to take back craft!
+        </SliderText>
         <div className="card">
           {/* <button className="button" onClick={() => this.prevProperty()}>
           <p className='button-icon'>&#10094;</p>
