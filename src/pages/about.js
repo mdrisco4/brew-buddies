@@ -109,6 +109,38 @@ const About = () => (
       beer?  BrewBuddies also holds regular events to promote our partners,
       engage with their fans, and uplift the craft beverage community as a whole!
     </MissionStatement> */}
+    <AboutHeader>Who We Are</AboutHeader>
+    <MissionStatement>
+      BrewBuddies was founded in the Spring of 2022 by Rob Richenberg. Over the
+      past ten years, Rob has gained extensive experience in various facets of
+      the craft beer industry: he's managed a beer bar, overseen brewery taproom
+      operations, and organized & curated a major regional beer festival. As a
+      passionate advocate of supporting local businesses, he's personally
+      overseen nearly 100 collaboration brews and organized countless unique
+      events designed to benefit craft beverage producers across the state.
+    </MissionStatement>
+    <AboutHeader>What We Do</AboutHeader>
+    <MissionStatement>
+      BrewBuddies aims to provide a service-focused alternative to traditional
+      beer distributors:
+    </MissionStatement>
+    <MissionStatement>
+      ∙For our retail clients, this means eliminating the "red tape" that often
+      comes with buying from clunky corporate wholesalers: order minimums,
+      timing restrictions, order cutoffs. We understand the realities of running
+      a restaurant, and know that sometimes, you're gonna need to place that
+      order after 5pm because you had a cook call out and you have to cover prep
+      for a 25-top that just let you know they're coming in 3 hours.
+    </MissionStatement>
+    <MissionStatement>
+      ∙For our supplier clients, this means providing an experienced sales team
+      dedicated to craft beer and genuinely excited to get your products into
+      the hands of customers via bars, restaurants, and store shelves. Full
+      transparency (something severely lacking in this industry): we're not
+      looking to lock anyone into a contract or own anyone's brands rights. We
+      want to make money together, not sell your brand to a bigger fish for a
+      quick payday.
+    </MissionStatement>
   </div>
 );
 
