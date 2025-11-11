@@ -42,7 +42,7 @@ const BrandInfo = styled.div`
   margin-left: 8%;
   margin-right: 8%;
   padding-top: 20px;
-  padding-bottom: 30px;
+  padding-bottom: 20px;
   @media (min-width: 480px) {
     font-size: 24px;
   }
@@ -67,6 +67,43 @@ const BrandInfo = styled.div`
   }
   @media (min-width: 1260px) {
     font-size: 50px;
+  }
+`;
+
+const BrandDisclaimer = styled.div`
+  text-align: center;
+  font-size: 10px;
+  font-family: "Comfortaa", cursive;
+  font-weight: bold;
+  margin-bottom: 15px;
+  margin-left: 24%;
+  margin-right: 24%;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  @media (min-width: 480px) {
+    font-size: 14px;
+  }
+  @media (min-width: 576px) {
+    font-size: 20px;
+  }
+  @media (min-width: 650px) {
+    font-size: 20px;
+  }
+  @media (min-width: 768px) {
+    text-align: center;
+    font-size: 24px;
+  }
+  @media (min-width: 870px) {
+    font-size: 25px;
+  }
+  @media (min-width: 980px) {
+    font-size: 30px;
+  }
+  @media (min-width: 1100px) {
+    font-size: 36px;
+  }
+  @media (min-width: 1260px) {
+    font-size: 40px;
   }
 `;
 
@@ -150,6 +187,9 @@ const Brands = () => (
       to learn more about each of our partners! */}
       Click their logos to learn more about each of the brands we work with!'
     </BrandInfo>
+    <BrandDisclaimer>
+      Some brands only available in select markets
+    </BrandDisclaimer>
     <LogoContainer2>
       <BrandLink href="https://www.beelzebubbles.com/" target="_blank">
         <Logo src="https://i.imgur.com/T0u0a1N.png" />
@@ -157,27 +197,30 @@ const Brands = () => (
       <BrandLink href="https://brazenbrewco.com/" target="_blank">
         <Logo src="https://i.imgur.com/raXHyWZ.png" />
       </BrandLink>
-      <BrandLink href="https://www.brindlehausbrewing.com/" target="_blank">
-        <Logo src="https://i.imgur.com/GjQOJxj.png" />
-      </BrandLink>
-    </LogoContainer2>
-    <LogoContainer2>
       <BrandLink href="https://buffalo-brewing-company.com/" target="_blank">
         <Logo src="https://i.imgur.com/99eoAiw.png" />
       </BrandLink>
+    </LogoContainer2>
+    <LogoContainer2>
       <BrandLink href="https://bullfinchbrewpub.com/" target="_blank">
         <Logo src="https://i.imgur.com/nRj22M5.png" />
       </BrandLink>
       <BrandLink href="https://elifishbrewing.com/" target="blank">
         <Logo src="https://i.imgur.com/tdGuKKq.png" />
       </BrandLink>
-    </LogoContainer2>
-    <LogoContainer2>
       <BrandLink
         href="https://happygutsanctuary.com/index.html"
         target="_blank"
       >
         <Logo src="https://i.imgur.com/Y6wWNjt.png" />
+      </BrandLink>
+    </LogoContainer2>
+    <LogoContainer2>
+      <BrandLink
+        href="https://faircraftbrauhaus.com/"
+        target="_blank"
+      >
+        <Logo src="https://i.imgur.com/ZwY8dfY.png" />
       </BrandLink>
       <BrandLink href="https://www.irontugbrewing.com/" target="_blank">
         <Logo src="https://i.imgur.com/yfUaxAQ.png" />
@@ -193,39 +236,40 @@ const Brands = () => (
       <BrandLink href="https://www.lillybellemeads.com/" target="_blank">
         <Logo src="https://i.imgur.com/KkN1Fdv.png" />
       </BrandLink>
-      <BrandLink href="https://seedandstonecidery.com/" target="_blank">
-        <Logo src="https://i.imgur.com/jLQV4S3.gif" />
+      <BrandLink href="https://www.luckyfrogbeverages.com/" target="_blank">
+        <Logo src="https://i.imgur.com/Z5ilWAO.png" />
       </BrandLink>
     </LogoContainer2>
     <LogoContainer2>
-      <BrandLink href="https://www.luckyharebrewing.com/" target="_blank">
-        <Logo src="https://i.imgur.com/KJCE4FK.png" />
-      </BrandLink>
       <BrandLink href="https://ninemaidensbrewing.com/" target="_blank">
         <Logo src="https://i.imgur.com/16ZsSO2.png" />
+      </BrandLink>
+      <BrandLink href="https://www.osbciderworks.com/" target="_blank">
+        <Logo src="https://i.imgur.com/i8vHJJN.png" />
       </BrandLink>
       <BrandLink href="https://www.peacemakerbrewing.com/" target="_blank">
         <Logo src="https://i.imgur.com/yK3kthB.png" />
       </BrandLink>
     </LogoContainer2>
     <LogoContainer2>
+    <BrandLink href="https://www.queencitymeadery.com/" target="_blank">
+        <Logo src="https://i.imgur.com/UfuFk6U.png" />
+      </BrandLink>
+      <BrandLink href="https://www.roundtablebrewery.com/" target="_blank">
+        <Logo src="https://i.imgur.com/RuKiF9g.png" />
+      </BrandLink>
       <BrandLink href="http://rustynickelbrewing.com/" target="_blank">
         <Logo src="https://i.imgur.com/Y7PdPio.png" />
       </BrandLink>
-      <BrandLink href="https://sagerbeerworks.com/" target="_blank">
-        <Logo src="https://i.imgur.com/D2PxpfJ.png" />
-      </BrandLink>
-      <BrandLink href="https://seedandstonecidery.com/" target="_blank">
-        <Logo src="https://i.imgur.com/42OnRME.png" />
-      </BrandLink>
     </LogoContainer2>
     <LogoContainer2>
+    <BrandLink href="https://sagerbeerworks.com/" target="_blank">
+        <Logo src="https://i.imgur.com/D2PxpfJ.png" />
+      </BrandLink>
       <BrandLink href="https://octopusbrew.com/" target="_blank">
         <Logo src="https://i.imgur.com/i9fFQCZ.png" />
       </BrandLink>
-      <BrandLink href="https://www.steampunkcider.com/" target="_blank">
-        <Logo src="https://i.imgur.com/tL5W19N.png" />
-      </BrandLink>
+
       <BrandLink
         href="https://www.stoneyardbrewingcompany.com/"
         target="_blank"
@@ -244,14 +288,17 @@ const Brands = () => (
         <Logo src="https://i.imgur.com/SIIWc7a.png" />
       </BrandLink>
     </LogoContainer2>
-    <LogoContainer3>
+    <LogoContainer2>
       <BrandLink href="https://www.twinforkbeer.com/" target="_blank">
         <Logo src="https://i.imgur.com/hj0ZqYt.png" />
       </BrandLink>
       <BrandLink href="https://wagnerbrewing.com/" target="_blank">
         <Logo src="https://i.imgur.com/YkLBZSh.png" />
       </BrandLink>
-    </LogoContainer3>
+      <BrandLink href="https://www.watershedbrewingflx.com/" target="_blank">
+        <Logo src="https://i.imgur.com/ZbyVPi5.png" />
+      </BrandLink>
+    </LogoContainer2>
 
     {/* <LogoContainer2>
       <BrandLink href="https://sagerbeerworks.com/" target="_blank">
