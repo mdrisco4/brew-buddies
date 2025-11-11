@@ -185,7 +185,7 @@ const Brands = () => (
     <BrandInfo>
       {/* BrewBuddies is proud to represent the following brands. Click their logos
       to learn more about each of our partners! */}
-      Click their logos to learn more about each of the brands we work with!'
+      Click their logos to learn more about each of the brands we work with!
     </BrandInfo>
     <BrandDisclaimer>
       Some brands only available in select markets
