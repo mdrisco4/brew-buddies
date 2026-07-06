@@ -70,12 +70,22 @@ const Slide = ({ property }) => {
 class Slider extends React.Component {
   constructor(props) {
     super(props);
+
     this.state = {
       properties: this.props.slideData,
       property: this.props.slideData[0],
       stopFiring: false,
     };
-    // this.SlideOne = this.Slide.bind(this);
+
+    this.interval = null;
+  }
+
+  componentDidMount() {
+    this.interval = setInterval(this.nextProperty, 3000);
+  }
+
+  componentWillUnmount() {
+    clearInterval(this.interval);
   }
 
   prevProperty = () => {
@@ -84,84 +94,49 @@ class Slider extends React.Component {
       this.setState({
         property: this.props.slideData[newIndex],
       });
-      console.log(this.state.property.index);
-    }
-    if (this.state.property.index == 0) {
+    } else {
       const newIndex = this.props.slideData.length - 1;
       this.setState({
         property: this.props.slideData[newIndex],
       });
-      console.log(this.state.property.index);
     }
   };
 
   nextProperty = () => {
-    // if (this.state.property.index >= 0) {
+    console.log("Next slide");
+
     if (this.state.property.index < this.props.slideData.length - 1) {
       const newIndex = this.state.property.index + 1;
       this.setState({
         property: this.props.slideData[newIndex],
       });
-      // console.log(this.state.property.index);
-    }
-    if (this.state.property.index == this.props.slideData.length - 1) {
-      const newIndex = 0;
+    } else {
       this.setState({
-        property: this.props.slideData[newIndex],
+        property: this.props.slideData[0],
       });
-      // console.log(this.state.property.index);
     }
-  };
-
-  AutoScroll = () => {
-    setInterval(this.nextProperty, 3000);
   };
 
   SlideOne = () => {
     this.setState({
-      property: 0,
+      property: this.props.slideData[0],
     });
-    // this.state.property.index = 0
-    console.log("slide 1");
   };
 
   SlideTwo = () => {
-    this.state.props.slideData = 1;
-    console.log("slide 2");
+    this.setState({
+      property: this.props.slideData[1],
+    });
   };
 
   SlideThree = () => {
-    this.state.props.slideData = 2;
-    console.log("slide 3");
+    this.setState({
+      property: this.props.slideData[2],
+    });
   };
 
   render() {
-    const { stopFiring, property } = this.state;
-
-    const slideShow = () => {
-      this.AutoScroll();
-      // console.log("fired");
-    };
-
-    window.onload = function () {
-      slideShow();
-      console.log("loaded");
-    };
-
-    // window.$(document).ready = function () {
-    //   slideShow();
-    //   console.log("loaded")
-    // }
-
-    // window.addEventListener = function () {
-    //   slideShow()
-    //   // , {once : true};
-    //   console.log("loaded")
-    // };
-
-    // window.addEventListener("load", slideShow, false);
-    //   console.log("loaded")
-    // };
+    const { property } = this.state;
 
     return (
       <div>
@@ -170,22 +145,20 @@ class Slider extends React.Component {
           beverage industry, which has long been ripe for change. Follow us on
           our journey to take back craft!
         </SliderText>
+
         <div className="card">
-          {/* <button className="button" onClick={() => this.prevProperty()}>
-          <p className='button-icon'>&#10094;</p>
-          </button> */}
           <div className="slide">
             <Slide property={property} />
           </div>
-          {/* <button className="button" onClick={() => this.AutoScroll()}>
-            <p className="button-icon">&#10095;</p>
-          </button> */}
         </div>
-        {/* <CircleContainer>
-          <Dot onClick={this.SlideOne}/>
-          <Dot onClick={this.SlideTwo}/>
-          <Dot onClick={this.SlideThree}/>
-        </CircleContainer> */}
+
+        {/*
+        <CircleContainer>
+          <Dot onClick={this.SlideOne} />
+          <Dot onClick={this.SlideTwo} />
+          <Dot onClick={this.SlideThree} />
+        </CircleContainer>
+        */}
       </div>
     );
   }
