@@ -1,8 +1,6 @@
 import React, { useEffect } from "react";
-import ReactDOM from "react-dom";
 import "../styles/imageSlider.css";
 import styled from "styled-components";
-import { slide } from "react-burger-menu";
 
 const CircleContainer = styled.div`
   display: flex;
@@ -60,7 +58,7 @@ const Slide = ({ property }) => {
     <div id={`slide-${index}`} className="slide">
       <div className="slide-container">
         <div className="image">
-          <img src={img} className="slide-img" />
+          <img src={img} className="slide-img" alt="" />
         </div>
       </div>
     </div>
