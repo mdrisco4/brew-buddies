@@ -198,12 +198,12 @@ const Brands = () => (
         <Logo src="https://i.imgur.com/T0u0a1N.png" />
       </BrandLink>
       <BrandLink href="https://brazenbrewco.com/" target="_blank">
-        <Logo src="https://i.imgur.com/raXHyWZ.png" />
+        <Logo src="https://i.imgur.com/EmG2hb6.png" />
       </BrandLink>
     </LogoContainer2>
     <LogoContainer2>
       <BrandLink href="https://buffalo-brewing-company.com/" target="_blank">
-        <Logo src="https://i.imgur.com/99eoAiw.png" />
+        <Logo src="https://i.imgur.com/XLdNWGO.png" />
       </BrandLink>
       <BrandLink href="https://bullfinchbrewpub.com/" target="_blank">
         <Logo src="https://i.imgur.com/nRj22M5.png" />
@@ -248,7 +248,7 @@ const Brands = () => (
         <Logo src="https://i.imgur.com/BxBxPWR.png" />
       </BrandLink>
       <BrandLink href="https://www.osbciderworks.com/" target="_blank">
-        <Logo src="https://i.imgur.com/i8vHJJN.png" />
+        <Logo src="https://i.imgur.com/6BZec1y.png" />
       </BrandLink>
     </LogoContainer2>
     <LogoContainer2>
