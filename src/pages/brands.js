@@ -237,7 +237,7 @@ const Brands = () => (
         <Logo src="https://i.imgur.com/KkN1Fdv.png" />
       </BrandLink>
       <BrandLink href="https://www.luckyfrogbeverages.com/" target="_blank">
-        <Logo src="https://i.imgur.com/Z5ilWAO.png" />
+        <Logo src="https://i.imgur.com/JpfFQNM.png" />
       </BrandLink>
     </LogoContainer2>
     <LogoContainer2>
@@ -270,7 +270,7 @@ const Brands = () => (
         <Logo src="https://i.imgur.com/D2PxpfJ.png" />
       </BrandLink>
       <BrandLink href="https://octopusbrew.com/" target="_blank">
-        <Logo src="https://i.imgur.com/i9fFQCZ.png" />
+        <Logo src="https://i.imgur.com/hvoJjAB.png" />
       </BrandLink>
       </LogoContainer2>
       <LogoContainer2>
@@ -284,12 +284,12 @@ const Brands = () => (
         <Logo src="https://i.imgur.com/z5Wi4iB.png" />
       </BrandLink>
       <BrandLink href="https://www.twinforkbeer.com/" target="_blank">
-        <Logo src="https://i.imgur.com/hj0ZqYt.png" />
+        <Logo src="https://i.imgur.com/4HgjX7O.png" />
       </BrandLink>
     </LogoContainer2>
     <LogoContainer1>
       <BrandLink href="https://wagnerbrewing.com/" target="_blank">
-        <Logo src="https://i.imgur.com/YkLBZSh.png" />
+        <Logo src="https://i.imgur.com/4Vu3SON.png" />
       </BrandLink>
       <BrandLink href="https://www.watershedbrewingflx.com/" target="_blank">
         <Logo src="https://i.imgur.com/ZbyVPi5.png" />
